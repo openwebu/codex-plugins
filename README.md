@@ -18,8 +18,8 @@ Built for humans, AI agents, and CI/CD pipelines.
 Clone and open the repo (any location is fine):
 
 ```bash
-git clone https://github.com/NagyVikt/openplugins.git
-cd openplugins
+git clone https://github.com/openwebu/codex-plugins.git
+cd codex-plugins
 ```
 
 ### Linux

@@ -12,7 +12,7 @@ from typing import Any
 
 MAX_PLUGIN_NAME_LENGTH = 64
 DEFAULT_PLUGIN_PARENT = Path(__file__).resolve().parents[4] / "plugins"
-DEFAULT_MARKETPLACE_PATH = Path(__file__).resolve().parents[2] / "plugins" / "marketplace.json"
+DEFAULT_MARKETPLACE_PATH = Path(__file__).resolve().parents[3] / "plugins" / "marketplace.json"
 DEFAULT_INSTALL_POLICY = "AVAILABLE"
 DEFAULT_AUTH_POLICY = "ON_INSTALL"
 DEFAULT_CATEGORY = "Productivity"

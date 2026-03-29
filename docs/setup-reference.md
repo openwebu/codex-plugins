@@ -16,23 +16,23 @@ git config core.hooksPath .githooks
 scripts/sync_plugins_to_marketplace.py
 ```
 
-## Manual new plugin flow
+## Plugin scaffold flow
 
 ```bash
-mkdir -p plugins/my-plugin/.codex-plugin
-cat > plugins/my-plugin/.codex-plugin/plugin.json <<'JSON'
-{
-  "name": "my-plugin",
-  "interface": {
-    "displayName": "My Plugin"
-  }
-}
-JSON
-
-scripts/sync_plugins_to_marketplace.py
+bash scripts/new-plugin.sh my-plugin
 git add plugins/my-plugin .agents/plugins/marketplace.json
 git commit -m "Add my-plugin"
 git push
+```
+
+## Advanced scaffold options
+
+`scripts/new-plugin.sh` forwards extra options to the canonical Python scaffolder:
+
+```bash
+bash scripts/new-plugin.sh my-plugin \
+  --with-skills --with-hooks --with-scripts --with-assets --with-mcp --with-apps \
+  --install-policy AVAILABLE --auth-policy ON_INSTALL --category Productivity
 ```
 
 ## Repo structure

@@ -3,12 +3,14 @@ set -euo pipefail
 
 usage() {
   cat <<'USAGE'
-Usage: bash scripts/new-plugin.sh <plugin-name>
+Usage: bash scripts/new-plugin.sh <plugin-name> [scaffold-options...]
 
 Rules:
-- plugin name must be lowercase-hyphen (example: my-plugin)
-- allowed chars: a-z, 0-9, -
-- cannot start/end with '-'
+- plugin name is normalized by the Python scaffolder (example: `My Plugin` -> `my-plugin`)
+- plugin name must include at least one letter or digit
+Notes:
+- This wrapper calls the canonical Python scaffolder.
+- Additional flags are forwarded to the Python scaffolder.
 USAGE
 }
 
@@ -16,27 +18,34 @@ title_case() {
   echo "$1" | tr '-' ' ' | awk '{for (i = 1; i <= NF; i++) $i = toupper(substr($i,1,1)) substr($i,2); print}'
 }
 
-run_sync() {
-  local sync_script="$1"
-  if [[ -x "$sync_script" ]]; then
-    "$sync_script"
-  elif command -v python3 >/dev/null 2>&1; then
-    python3 "$sync_script"
+run_python_script() {
+  local script_path="$1"
+  shift
+  if command -v python3 >/dev/null 2>&1; then
+    python3 "$script_path" "$@"
   elif command -v python >/dev/null 2>&1; then
-    python "$sync_script"
+    python "$script_path" "$@"
+  elif [[ -x "$script_path" ]]; then
+    "$script_path" "$@"
   else
-    echo "[new-plugin] ERROR: sync script is not executable and no Python runtime was found." >&2
+    echo "[new-plugin] ERROR: no usable Python runtime found for $script_path" >&2
     exit 1
   fi
 }
 
-if [[ $# -ne 1 ]]; then
+if [[ $# -lt 1 ]]; then
   usage
   exit 1
 fi
 
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+  usage
+  exit 0
+fi
+
 plugin_name="$1"
-if [[ ! "$plugin_name" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
+shift
+if [[ -z "$plugin_name" ]]; then
   echo "[new-plugin] ERROR: invalid plugin name '$plugin_name'" >&2
   usage
   exit 1
@@ -44,34 +53,23 @@ fi
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_root="$(cd "$script_dir/.." && pwd)"
-plugin_dir="$repo_root/plugins/$plugin_name"
-manifest_dir="$plugin_dir/.codex-plugin"
-manifest_path="$manifest_dir/plugin.json"
 sync_script="$repo_root/scripts/sync_plugins_to_marketplace.py"
+scaffold_script="$repo_root/.agents/skills/plugin-creator/scripts/create_basic_plugin.py"
 
 display_name="$(title_case "$plugin_name")"
 
-if [[ -e "$plugin_dir" ]]; then
-  echo "[new-plugin] ERROR: plugin already exists at $plugin_dir" >&2
+if [[ ! -f "$scaffold_script" ]]; then
+  echo "[new-plugin] ERROR: missing scaffold script at $scaffold_script" >&2
   exit 1
 fi
 
 echo "[new-plugin] Creating plugin: $plugin_name"
-mkdir -p "$manifest_dir"
-
-cat > "$manifest_path" <<JSON
-{
-  "name": "$plugin_name",
-  "interface": {
-    "displayName": "$display_name"
-  }
-}
-JSON
+run_python_script "$scaffold_script" "$plugin_name" --with-marketplace "$@"
 
 echo "[new-plugin] Syncing marketplace..."
-run_sync "$sync_script"
+run_python_script "$sync_script"
 
 echo "[new-plugin] Done. Next commands:"
 echo "  git add plugins/$plugin_name .agents/plugins/marketplace.json"
-echo "  git commit -m \"Add $plugin_name plugin\""
+echo "  git commit -m \"Add $display_name plugin\""
 echo "  git push"

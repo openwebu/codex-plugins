@@ -10,11 +10,9 @@ description: Create and scaffold plugin directories for Codex with a required `.
 1. Run the scaffold script:
 
 ```bash
-  # Plugin names are normalized to lower-case hyphen-case and must be <= 64 chars.
-  # The generated folder and plugin.json name are always the same.
-# Run from repo root (or replace .agents/... with the absolute path to this SKILL).
-# By default creates in <repo_root>/plugins/<plugin-name>.
-python3 .agents/skills/plugin-creator/scripts/create_basic_plugin.py <plugin-name>
+# Plugin names are normalized to lower-case hyphen-case and must be <= 64 chars.
+# Run from repo root.
+bash scripts/new-plugin.sh <plugin-name>
 ```
 
 2. Open `<plugin-path>/.codex-plugin/plugin.json` and replace `[TODO: ...]` placeholders.
@@ -23,13 +21,13 @@ python3 .agents/skills/plugin-creator/scripts/create_basic_plugin.py <plugin-nam
 
 ```bash
 # marketplace.json always lives at <repo-root>/.agents/plugins/marketplace.json
-python3 .agents/skills/plugin-creator/scripts/create_basic_plugin.py my-plugin --with-marketplace
+bash scripts/new-plugin.sh my-plugin --with-marketplace
 ```
 
 4. Generate/adjust optional companion folders as needed:
 
 ```bash
-python3 .agents/skills/plugin-creator/scripts/create_basic_plugin.py my-plugin --path <parent-plugin-directory> \
+bash scripts/new-plugin.sh my-plugin --path <parent-plugin-directory> \
   --with-skills --with-hooks --with-scripts --with-assets --with-mcp --with-apps --with-marketplace
 ```
 

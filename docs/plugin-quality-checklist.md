@@ -1,10 +1,10 @@
 # Plugin Quality Checklist
 
-Use this checklist before adding or updating any plugin in `plugins/plugins/*`.
+Use this checklist before adding or updating any plugin in `plugins/*`.
 
 ## Required assets
 
-- Plugin folder exists in `plugins/plugins/<plugin-name>`.
+- Plugin folder exists in `plugins/<plugin-name>`.
 - `.codex-plugin/plugin.json` exists and is valid JSON.
 - `README.md` exists.
 - `skills/` contains at least one skill with `SKILL.md`.
@@ -42,5 +42,6 @@ Each plugin README should include:
 Run this before committing:
 
 ```bash
+python3 scripts/generate_readme_catalog.py
 python3 scripts/validate_plugin_quality.py
 ```

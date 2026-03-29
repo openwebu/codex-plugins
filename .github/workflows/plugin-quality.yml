@@ -1,0 +1,32 @@
+name: Plugin Quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  plugin-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Validate marketplace sync (no drift)
+        run: |
+          python3 scripts/sync_plugins_to_marketplace.py
+          git diff --exit-code -- .agents/plugins/marketplace.json
+
+      - name: Validate generated README sections (no drift)
+        run: |
+          python3 scripts/generate_readme_catalog.py
+          git diff --exit-code -- README.md
+
+      - name: Run plugin quality validator
+        run: python3 scripts/validate_plugin_quality.py

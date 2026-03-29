@@ -39,7 +39,6 @@ bash scripts/install_windows.sh
 ```bash
 ls -l "$HOME/plugins"
 ls -l "$HOME/.agents/plugins/marketplace.json"
-git config --get core.hooksPath
 scripts/sync_plugins_to_marketplace.py --dry-run
 ```
 
@@ -47,7 +46,6 @@ Expected:
 
 - `~/plugins` points to this repo `plugins/`
 - `~/.agents/plugins/marketplace.json` points to this repo marketplace
-- `core.hooksPath` is `.githooks`
 
 ## Add your first plugin
 
@@ -56,16 +54,6 @@ bash scripts/new-plugin.sh my-plugin
 ```
 
 This creates the plugin scaffold, syncs marketplace, and prints the exact `git add`, `git commit`, and `git push` commands.
-
-## What happens on `git push`
-
-This repo runs `.githooks/pre-push` automatically. It executes:
-
-```bash
-scripts/sync_plugins_to_marketplace.py
-```
-
-If marketplace changes are not committed, push is blocked so you can commit first.
 
 ## Need advanced options?
 

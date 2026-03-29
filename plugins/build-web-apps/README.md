@@ -19,6 +19,23 @@
 
 Build Web Apps helps you design, build, deploy, and scale modern web applications end to end.
 
+## Top Skills
+- `deploy-to-vercel`
+- `frontend-skill`
+- `react-best-practices`
+- `shadcn-best-practices`
+<details>
+<summary>Show all skills (7)</summary>
+
+- `deploy-to-vercel`
+- `frontend-skill`
+- `react-best-practices`
+- `shadcn-best-practices`
+- `stripe-best-practices`
+- `supabase-best-practices`
+- `web-design-guidelines`
+</details>
+
 ## What It Can Do
 - Improves UI/UX and frontend quality using web design and React best-practice workflows.
 - Supports deployment and production workflows via Vercel tooling.

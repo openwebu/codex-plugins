@@ -12,6 +12,9 @@
 
 Linear helps you find issues, reference project context, and keep execution aligned with roadmap work.
 
+## Top Skills
+- `linear`
+
 ## What It Can Do
 - Finds and references Linear issues and project context.
 - Supports triage workflows and status-aware planning updates.

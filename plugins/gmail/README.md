@@ -12,6 +12,10 @@
 
 Gmail helps you triage inbox activity, draft replies, and manage email threads faster.
 
+## Top Skills
+- `gmail`
+- `gmail-inbox-triage`
+
 ## What It Can Do
 - Summarizes inbox activity and surfaces high-priority threads.
 - Drafts replies and follow-ups based on conversation context.

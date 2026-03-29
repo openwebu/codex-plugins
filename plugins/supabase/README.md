@@ -12,6 +12,11 @@
 
 Supabase helps you run setup, schema, auth, RLS, and migration workflows with MCP support.
 
+## Top Skills
+- `cli`
+- `setup`
+- `supabase-usage`
+
 ## What It Can Do
 - Connects to Supabase MCP for schema, query, auth, and RLS workflows.
 - Supports setup validation, troubleshooting, and CLI-driven database tasks.

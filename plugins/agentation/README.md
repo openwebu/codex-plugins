@@ -19,6 +19,9 @@
 
 Agentation adds in-app annotations and MCP-synced feedback loops for React teams and coding agents.
 
+## Top Skills
+- `agentation`
+
 ## What It Can Do
 - Adds in-app annotations to React apps so bugs, questions, and TODOs are captured in context.
 - Synchronizes annotation threads with MCP-enabled coding agents for round-trip updates.

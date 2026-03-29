@@ -19,6 +19,25 @@
 
 Cloudflare gives you platform guidance and MCP access for Workers, edge services, and production operations.
 
+## Top Skills
+- `agents-sdk`
+- `building-ai-agent-on-cloudflare`
+- `building-mcp-server-on-cloudflare`
+- `cloudflare`
+<details>
+<summary>Show all skills (9)</summary>
+
+- `agents-sdk`
+- `building-ai-agent-on-cloudflare`
+- `building-mcp-server-on-cloudflare`
+- `cloudflare`
+- `durable-objects`
+- `sandbox-sdk`
+- `web-perf`
+- `workers-best-practices`
+- `wrangler`
+</details>
+
 ## What It Can Do
 - Guides platform choices across Workers, Pages, storage, security, and networking.
 - Includes focused skills for Wrangler, Durable Objects, Agents SDK, and performance work.

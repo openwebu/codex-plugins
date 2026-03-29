@@ -12,6 +12,12 @@
 
 GitHub streamlines PR, issue, CI, and publishing workflows for day-to-day engineering delivery.
 
+## Top Skills
+- `gh-address-comments`
+- `gh-fix-ci`
+- `github`
+- `yeet`
+
 ## What It Can Do
 - Inspects repositories, pull requests, issues, and review threads.
 - Supports CI triage and fixing failing GitHub Actions checks.

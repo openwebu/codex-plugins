@@ -19,6 +19,27 @@
 
 Hugging Face helps you discover models, datasets, Spaces, and applied ML workflows.
 
+## Top Skills
+- `cli`
+- `community-evals`
+- `datasets`
+- `gradio`
+<details>
+<summary>Show all skills (11)</summary>
+
+- `cli`
+- `community-evals`
+- `datasets`
+- `gradio`
+- `jobs`
+- `llm-trainer`
+- `paper-publisher`
+- `papers`
+- `trackio`
+- `transformers.js`
+- `vision-trainer`
+</details>
+
 ## What It Can Do
 - Explores models, datasets, Spaces, and research resources from Hugging Face.
 - Supports practical ML workflows including jobs, trainers, and evaluation paths.

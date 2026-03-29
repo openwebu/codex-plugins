@@ -19,6 +19,30 @@
 
 Superpowers gives you structured engineering workflows for planning, execution, debugging, and review.
 
+## Top Skills
+- `brainstorming`
+- `dispatching-parallel-agents`
+- `executing-plans`
+- `finishing-a-development-branch`
+<details>
+<summary>Show all skills (14)</summary>
+
+- `brainstorming`
+- `dispatching-parallel-agents`
+- `executing-plans`
+- `finishing-a-development-branch`
+- `receiving-code-review`
+- `requesting-code-review`
+- `subagent-driven-development`
+- `systematic-debugging`
+- `test-driven-development`
+- `using-git-worktrees`
+- `using-superpowers`
+- `verification-before-completion`
+- `writing-plans`
+- `writing-skills`
+</details>
+
 ## What It Can Do
 - Provides structured engineering workflows for planning, debugging, testing, and review.
 - Includes TDD, systematic debugging, code-review loops, and execution playbooks.

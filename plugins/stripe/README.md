@@ -12,6 +12,10 @@
 
 Stripe helps you make safer payment and billing integration decisions with modern API guidance.
 
+## Top Skills
+- `stripe-best-practices`
+- `upgrade-stripe`
+
 ## What It Can Do
 - Supports Stripe-powered payment and billing implementation decisions.
 - Guides migration from legacy patterns to current Stripe APIs.

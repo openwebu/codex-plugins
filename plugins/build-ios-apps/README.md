@@ -19,6 +19,21 @@
 
 Build iOS Apps helps you build, refactor, and debug SwiftUI apps with practical simulator workflows.
 
+## Top Skills
+- `ios-debugger-agent`
+- `swiftui-liquid-glass`
+- `swiftui-performance-audit`
+- `swiftui-ui-patterns`
+<details>
+<summary>Show all skills (5)</summary>
+
+- `ios-debugger-agent`
+- `swiftui-liquid-glass`
+- `swiftui-performance-audit`
+- `swiftui-ui-patterns`
+- `swiftui-view-refactor`
+</details>
+
 ## What It Can Do
 - Builds and refactors SwiftUI features with modern iOS patterns.
 - Audits SwiftUI performance and identifies rendering bottlenecks.

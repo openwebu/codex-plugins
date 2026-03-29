@@ -12,6 +12,24 @@
 
 Medusa helps you build backend, admin, and storefront ecommerce features with docs-backed workflows.
 
+## Top Skills
+- `building-admin-dashboard-customizations`
+- `building-storefronts`
+- `building-with-medusa`
+- `db-generate`
+<details>
+<summary>Show all skills (8)</summary>
+
+- `building-admin-dashboard-customizations`
+- `building-storefronts`
+- `building-with-medusa`
+- `db-generate`
+- `db-migrate`
+- `learning-medusa`
+- `new-user`
+- `storefront-best-practices`
+</details>
+
 ## What It Can Do
 - Builds Medusa backend modules, workflows, API routes, and data models.
 - Supports admin dashboard customizations and storefront integrations.

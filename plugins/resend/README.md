@@ -12,6 +12,9 @@
 
 Resend helps you send and manage transactional email, broadcasts, audiences, and domains.
 
+## Top Skills
+- `resend-cli`
+
 ## What It Can Do
 - Sends and manages transactional emails, broadcasts, contacts, and domains.
 - Supports both MCP-native workflows and CLI-driven operational tasks.

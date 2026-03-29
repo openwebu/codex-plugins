@@ -19,6 +19,21 @@
 
 Google Calendar helps you summarize schedules, coordinate availability, and manage events from prompts.
 
+## Top Skills
+- `google-calendar`
+- `google-calendar-daily-brief`
+- `google-calendar-free-up-time`
+- `google-calendar-group-scheduler`
+<details>
+<summary>Show all skills (5)</summary>
+
+- `google-calendar`
+- `google-calendar-daily-brief`
+- `google-calendar-free-up-time`
+- `google-calendar-group-scheduler`
+- `google-calendar-meeting-prep`
+</details>
+
 ## What It Can Do
 - Summarizes schedule, daily agenda, and meeting readiness.
 - Compares availability for group scheduling and planning.

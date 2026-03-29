@@ -12,6 +12,22 @@
 
 Slack helps you summarize channels, draft responses, and keep team communication moving.
 
+## Top Skills
+- `slack`
+- `slack-channel-summarization`
+- `slack-daily-digest`
+- `slack-notification-triage`
+<details>
+<summary>Show all skills (6)</summary>
+
+- `slack`
+- `slack-channel-summarization`
+- `slack-daily-digest`
+- `slack-notification-triage`
+- `slack-outgoing-message`
+- `slack-reply-drafting`
+</details>
+
 ## What It Can Do
 - Summarizes channel activity and drafts context-aware replies.
 - Builds digests and triage views for notifications and team updates.

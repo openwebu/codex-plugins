@@ -19,6 +19,25 @@
 
 Game Studio helps you plan, prototype, and ship browser games across 2D and 3D stacks.
 
+## Top Skills
+- `game-playtest`
+- `game-studio`
+- `game-ui-frontend`
+- `phaser-2d-game`
+<details>
+<summary>Show all skills (9)</summary>
+
+- `game-playtest`
+- `game-studio`
+- `game-ui-frontend`
+- `phaser-2d-game`
+- `react-three-fiber-game`
+- `sprite-pipeline`
+- `three-webgl-game`
+- `web-3d-asset-pipeline`
+- `web-game-foundations`
+</details>
+
 ## What It Can Do
 - Plans and prototypes browser games across 2D and 3D stacks.
 - Supports gameplay loop design, UI, asset pipelines, and playtest workflows.

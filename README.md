@@ -1,7 +1,7 @@
 # CODEX PLUGINS
 
-A Codex plugin workspace to rule them all, unlocking superpowers across open-
-source and enterprise platforms, from community stacks to modern CLIs.
+A Codex plugin workspace to rule them all, unlocking superpowers across
+open-source ecosystems, enterprise platforms, and modern CLI-driven stacks.
 
 ```text
  ██████╗ ██████╗ ██████╗ ███████╗██╗  ██╗    ██████╗ ██╗     ██╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗
@@ -58,6 +58,23 @@ source and enterprise platforms, from community stacks to modern CLIs.
   - [x] Productivity/workspace automation: `google-drive`, `gmail`, `google-calendar`, `slack`, `notion`, `box`, `linear`.
 
 - [ ] TODO: auto-generate top-skill and expandable hidden-skill blocks from plugin metadata/scripts.
+
+## README maintenance policy (enforced)
+
+This repository follows strict governance in [AGENTS.md](./AGENTS.md):
+
+- Every meaningful change requires a root `README.md` quality check and update pass if stale.
+- Any plugin add/rename/remove/update must sync planner block, lineup/capabilities, roadmap/TODO, setup/update instructions, and skill presentation references.
+- Work is incomplete until plugin metadata and README surfaces are synchronized.
+
+### When adding a new plugin
+
+- Add plugin scaffold/metadata and ensure names match final lineup wording.
+- Add or update plugin entry in `Current plugin lineup` with top skills and skill count.
+- Update `What Codex plugins can do today (planner style)` when capability coverage changes.
+- Update `What to add next (TODO roadmap)` by removing newly delivered items and/or adding follow-up gaps.
+- Validate setup/update instructions if the plugin introduces new prerequisites or bootstrap steps.
+- Re-run docs consistency checks before merge.
 
 ### What to add next (TODO roadmap)
 
@@ -130,6 +147,15 @@ bash scripts/new-plugin.sh my-plugin
 
 This creates the plugin scaffold, syncs marketplace, and prints the exact `git add`, `git commit`, and `git push` commands.
 
+## Plugin update expectations
+
+When changing an existing plugin (skills, metadata, naming, capabilities):
+
+- Update the plugin's local documentation as needed.
+- Update root README capability/lineup/roadmap/setup sections affected by the change.
+- Confirm cross-platform wording remains accurate (open-source + enterprise + CLI ecosystem coverage).
+- Treat missing README synchronization as incomplete work.
+
 ## Need advanced options?
 
 See [docs/setup-reference.md](docs/setup-reference.md) for:
@@ -199,8 +225,8 @@ Bridge design and code with component generation, system rules, and rapid design
 
 Capture and structure bug feedback loops to accelerate debugging and product quality.
 
-- Top skills: `coming soon`
-- Skill count: `0` (plugin scaffold present, skill pack in progress)
+- Top skills: `jam-bug-triage`
+- Skill count: `1`
 
 #### [`box`](./plugins/box)
 
@@ -375,8 +401,15 @@ Stand up and run Supabase projects with CLI-first setup and usage workflows.
 
 Set up secure SSH aliases for reusable remote access and run Supabase CLI commands on target servers.
 
-- Top skills: `remote-supabase-ops`, `ssh-setup-profile`
+- Top skills: `ssh-server-access`, `supabase-over-ssh`
 - Skill count: `2`
+
+#### [`docker-agent`](./plugins/docker-agent)
+
+Automate safe Go dependency maintenance with validation-first Docker Agent workflows.
+
+- Top skills: `bump-go-dependencies`
+- Skill count: `1`
 
 #### [`resend`](./plugins/resend)
 

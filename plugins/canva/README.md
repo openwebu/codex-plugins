@@ -12,6 +12,11 @@
 
 Canva helps you create, adapt, and scale designs for presentations, social media, and localization.
 
+## Top Skills
+- `canva-branded-presentation`
+- `canva-resize-for-all-social-media`
+- `canva-translate-design`
+
 ## What It Can Do
 - Creates and adapts Canva designs for common business and marketing tasks.
 - Supports quick resizing into multi-channel social formats.

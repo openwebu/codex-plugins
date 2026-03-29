@@ -26,6 +26,9 @@
 
 Test Android Apps helps you reproduce emulator issues and capture screenshots, UI state, and logs.
 
+## Top Skills
+- `android-emulator-qa`
+
 ## What It Can Do
 - Reproduces Android issues on emulator with evidence capture workflows.
 - Collects screenshots, UI hierarchy state, and logcat diagnostics.

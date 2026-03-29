@@ -12,6 +12,9 @@
 
 Box helps you quickly find, reference, and summarize documents from your Box workspace.
 
+## Top Skills
+- `box`
+
 ## What It Can Do
 - Searches Box files and folders from your connected workspace.
 - Pulls relevant documents into task context for summarization and synthesis.

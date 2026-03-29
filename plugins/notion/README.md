@@ -12,6 +12,12 @@
 
 Notion helps you turn specs, notes, and research into structured, shareable working documents.
 
+## Top Skills
+- `notion-knowledge-capture`
+- `notion-meeting-intelligence`
+- `notion-research-documentation`
+- `notion-spec-to-implementation`
+
 ## What It Can Do
 - Turns rough notes/specs into structured implementation plans and docs.
 - Supports research synthesis, meeting prep, and knowledge capture workflows.

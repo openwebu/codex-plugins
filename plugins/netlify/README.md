@@ -12,6 +12,9 @@
 
 Netlify helps you deploy projects, manage previews, and ship production releases with confidence.
 
+## Top Skills
+- `netlify-deploy`
+
 ## What It Can Do
 - Deploys projects to Netlify with preview and production release workflows.
 - Helps inspect deployment state and identify release blockers.

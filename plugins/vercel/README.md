@@ -12,6 +12,63 @@
 
 Vercel helps you build, deploy, operate, and optimize applications across the full Vercel ecosystem.
 
+## Top Skills
+- `agent-browser`
+- `agent-browser-verify`
+- `ai-elements`
+- `ai-gateway`
+<details>
+<summary>Show all skills (47)</summary>
+
+- `agent-browser`
+- `agent-browser-verify`
+- `ai-elements`
+- `ai-gateway`
+- `ai-generation-persistence`
+- `ai-sdk`
+- `auth`
+- `bootstrap`
+- `chat-sdk`
+- `cms`
+- `cron-jobs`
+- `deployments-cicd`
+- `email`
+- `env-vars`
+- `geist`
+- `geistdocs`
+- `investigation-mode`
+- `json-render`
+- `marketplace`
+- `micro`
+- `ncc`
+- `next-forge`
+- `nextjs`
+- `observability`
+- `payments`
+- `react-best-practices`
+- `routing-middleware`
+- `runtime-cache`
+- `satori`
+- `shadcn`
+- `sign-in-with-vercel`
+- `swr`
+- `turbopack`
+- `turborepo`
+- `v0-dev`
+- `vercel-agent`
+- `vercel-api`
+- `vercel-cli`
+- `vercel-firewall`
+- `vercel-flags`
+- `vercel-functions`
+- `vercel-queues`
+- `vercel-sandbox`
+- `vercel-services`
+- `vercel-storage`
+- `verification`
+- `workflow`
+</details>
+
 ## What It Can Do
 - Covers the full Vercel ecosystem: deployments, runtime behavior, observability, and platform services.
 - Includes extensive skills for Next.js, AI SDK, auth, storage, CI/CD, and performance.

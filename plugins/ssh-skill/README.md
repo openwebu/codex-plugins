@@ -11,27 +11,37 @@
 
 Secure, reusable SSH access for Codex sessions, plus remote Supabase CLI execution.
 
+## Top Skills
+- `remote-supabase-ops`
+- `setup-profile`
+
 ## What It Can Do
-- Set up reusable host aliases in `~/.ssh/config`.
-- Connect safely with SSH key-based authentication.
-- Run Supabase CLI commands remotely through SSH wrappers.
-- Enforce confirmation gates for destructive database operations.
+- Sets up reusable host aliases in `~/.ssh/config`.
+- Connects safely with SSH key-based authentication.
+- Runs Supabase CLI commands remotely through SSH wrappers.
+- Enforces confirmation gates for destructive database operations.
 
-## Security Defaults
-- No plaintext password storage in plugin or repository files.
-- Key-based SSH authentication by default.
-- Non-root login with optional `sudo` escalation per command.
+## Why Use It
+- Standardizes remote access across environments and teammates.
+- Keeps credentials out of repo files by default.
+- Makes sensitive remote operations safer and easier to audit.
 
-## Commands
-- `/ssh-skill:setup-profile`
-- `/ssh-skill:connect`
-- `/ssh-skill:supabase`
+## How It Works
+1. Configure SSH profile aliases for each target environment.
+2. Validate connectivity with non-destructive commands.
+3. Execute operational commands through approved SSH workflows.
 
-## Quick Example
+## Quick Examples
 
-```bash
+```
 ssh prod-eu 'supabase --version'
+```
+
+```
 ssh prod-eu 'supabase status'
 ```
 
-For destructive commands (e.g., `supabase db reset`), always require explicit user confirmation first.
+## Requirements
+- SSH key-based access to target hosts.
+- Supabase CLI installed on the remote host.
+- Explicit user confirmation before destructive database commands.

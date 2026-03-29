@@ -19,6 +19,26 @@
 
 Google Drive unifies Drive, Docs, Sheets, and Slides workflows in one plugin experience.
 
+## Top Skills
+- `google-docs`
+- `google-drive`
+- `google-sheets`
+- `google-sheets-chart-builder`
+<details>
+<summary>Show all skills (10)</summary>
+
+- `google-docs`
+- `google-drive`
+- `google-sheets`
+- `google-sheets-chart-builder`
+- `google-sheets-formula-builder`
+- `google-slides`
+- `google-slides-import-presentation`
+- `google-slides-template-migration`
+- `google-slides-template-surgery`
+- `google-slides-visual-iteration`
+</details>
+
 ## What It Can Do
 - Searches and organizes files across Drive, Docs, Sheets, and Slides.
 - Supports document summarization and spreadsheet/presentation workflows.

@@ -12,6 +12,9 @@
 
 Jam helps you capture screen-recorded bug context for faster triage and debugging handoffs.
 
+## Top Skills
+- `jam-bug-triage`
+
 ## What It Can Do
 - Captures screen recordings with contextual bug-report information.
 - Helps share reproducible visual evidence during debugging.

@@ -1,0 +1,44 @@
+{
+  "name": "desktop-commander",
+  "version": "0.1.0",
+  "description": "Desktop Commander MCP integration for local filesystem, process, and terminal workflows in Codex.",
+  "author": {
+    "name": "Desktop Commander Team",
+    "url": "https://desktopcommander.app/"
+  },
+  "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+  "repository": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+  "license": "MIT",
+  "keywords": [
+    "desktop-commander",
+    "mcp",
+    "filesystem",
+    "terminal",
+    "automation",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Desktop Commander",
+    "shortDescription": "Local filesystem and terminal superpowers via MCP",
+    "longDescription": "Use Desktop Commander MCP in Codex to read and edit local files, run terminal commands, manage processes, and perform structured local analysis workflows.",
+    "developerName": "Desktop Commander Team",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://desktopcommander.app/",
+    "privacyPolicyURL": "https://legal.desktopcommander.app/privacy_desktop_commander_mcp",
+    "termsOfServiceURL": "https://desktopcommander.app/terms",
+    "defaultPrompt": [
+      "Use /desktop-commander:desktop-commander-ops to inspect and edit local project files safely",
+      "Read a file with desktop-commander and summarize the important sections",
+      "Use desktop-commander process tools to analyze a local CSV with Python REPL"
+    ],
+    "brandColor": "#0B5FFF",
+    "screenshots": []
+  }
+}

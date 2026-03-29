@@ -12,6 +12,9 @@
 
 Saleor provides focused storefront implementation guidance for GraphQL, checkout, caching, and UX flows.
 
+## Top Skills
+- `saleor-paper-storefront`
+
 ## What It Can Do
 - Provides focused guidance for Saleor storefront implementation work.
 - Covers GraphQL patterns, caching, checkout flow, and storefront architecture.

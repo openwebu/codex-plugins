@@ -12,6 +12,23 @@
 
 Figma helps teams translate design files into production-ready code and repeatable design-system rules.
 
+## Top Skills
+- `figma-code-connect-components`
+- `figma-create-design-system-rules`
+- `figma-create-new-file`
+- `figma-generate-design`
+<details>
+<summary>Show all skills (7)</summary>
+
+- `figma-code-connect-components`
+- `figma-create-design-system-rules`
+- `figma-create-new-file`
+- `figma-generate-design`
+- `figma-generate-library`
+- `figma-implement-design`
+- `figma-use`
+</details>
+
 ## What It Can Do
 - Turns Figma designs into implementation-ready engineering tasks.
 - Supports Code Connect mapping between design components and source code.

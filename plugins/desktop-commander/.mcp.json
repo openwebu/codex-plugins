@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "desktop-commander": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ],
+      "note": "Official Desktop Commander MCP server package. Requires Node.js and npx in PATH."
+    }
+  }
+}

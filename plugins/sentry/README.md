@@ -12,6 +12,9 @@
 
 Sentry helps you inspect production issues and events to prioritize high-impact fixes.
 
+## Top Skills
+- `sentry`
+
 ## What It Can Do
 - Inspects recent Sentry issues and events from your projects.
 - Summarizes production error patterns for triage and prioritization.

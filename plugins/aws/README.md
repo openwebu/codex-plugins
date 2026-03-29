@@ -12,6 +12,10 @@
 
 AWS provides implementation workflows and MCP-backed guidance for architecture, operations, and AI workloads.
 
+## Top Skills
+- `aws-openai-workflow`
+- `aws-workflow`
+
 ## What It Can Do
 - Guides AWS architecture decisions for OpenAI-powered and general cloud workloads.
 - Covers security, deployment, operations, and troubleshooting patterns.

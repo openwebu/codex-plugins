@@ -39,8 +39,8 @@
       "Troubleshoot latency and cost for OpenAI workloads on AWS"
     ],
     "brandColor": "#232F3E",
-    "composerIcon": "./assets/aws-openai-small.svg",
-    "logo": "./assets/aws-openai.svg",
+    "composerIcon": "./assets/aws-small.svg",
+    "logo": "./assets/aws.svg",
     "screenshots": []
   }
 }

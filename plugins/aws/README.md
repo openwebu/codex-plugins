@@ -16,25 +16,57 @@ This plugin provides AWS-focused guidance for OpenAI-powered systems:
 
 | Skill | Description |
 | --- | --- |
-| `aws-openai-workflow` | Guides end-to-end AWS + OpenAI implementation choices and execution flow |
+| `aws-workflow` | Primary end-to-end AWS + OpenAI implementation workflow |
+| `aws-openai-workflow` | Backward-compatible alias for legacy references |
+
+## Quick Start (Core MCP Default)
+
+1. Run prerequisite checks:
+
+```bash
+bash scripts/prereq-check.sh
+```
+
+2. Set up core AWS MCP integration for Codex:
+
+```bash
+bash scripts/install-mcp.sh
+```
+
+3. Verify MCP setup:
+
+```bash
+codex mcp list
+```
+
+## Optional: Full AWS MCP Suite (Opt-in)
+
+To generate a full MCP configuration snippet (pricing, IaC, serverless, DSQL):
+
+```bash
+bash scripts/install-mcp-full.sh
+```
+
+By default, write-capable/advanced servers are printed with `disabled: true`.
+Enable only what you need.
 
 ## MCP Servers
 
 | Server | Description |
 | --- | --- |
-| `aws-mcp` | AWS CLI MCP proxy (`uvx mcp-proxy-for-aws@latest`) for AWS documentation and service workflows |
+| `aws-mcp` | Core AWS CLI MCP proxy (`uvx mcp-proxy-for-aws@latest`) |
+| `awsknowledge` | AWS knowledge endpoint (optional full-suite) |
+| `awsiac` | AWS IaC MCP server (optional full-suite, disabled by default) |
+| `awspricing` | AWS pricing MCP server (optional full-suite, disabled by default) |
+| `aws-serverless-mcp` | AWS serverless MCP server (optional full-suite, disabled by default) |
+| `aurora-dsql` | Aurora DSQL MCP server (optional full-suite, disabled by default) |
 
 ## Prerequisites
 
 - AWS CLI configured for your target account
+- `uvx` available locally
 - Node.js and Python 3 available
 - OpenAI API key available for local development or in AWS Secrets Manager
-
-Validate your environment:
-
-```bash
-bash scripts/prereq-check.sh
-```
 
 ## Example prompts
 
@@ -45,8 +77,8 @@ bash scripts/prereq-check.sh
 
 ## Files
 
-- `skills/aws-openai-workflow/SKILL.md` - Main orchestration workflow
-- `skills/aws-openai-workflow/references/architecture.md` - Deployment and topology patterns
-- `skills/aws-openai-workflow/references/security.md` - IAM, secrets, and data protection baseline
-- `skills/aws-openai-workflow/references/operations.md` - Reliability and troubleshooting playbook
+- `skills/aws-workflow/SKILL.md` - Primary orchestration workflow
+- `skills/aws-openai-workflow/SKILL.md` - Backward-compat alias
 - `scripts/prereq-check.sh` - Local prerequisite validator
+- `scripts/install-mcp.sh` - Core MCP setup helper
+- `scripts/install-mcp-full.sh` - Full-suite MCP config helper

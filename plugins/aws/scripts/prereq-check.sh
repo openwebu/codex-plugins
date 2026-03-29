@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "[aws-openai] Running prerequisite checks..."
+echo "[aws] Running prerequisite checks..."
 
 missing=0
 
@@ -16,6 +16,7 @@ check_cmd() {
 }
 
 check_cmd aws
+check_cmd uvx
 check_cmd node
 check_cmd python3
 
@@ -36,8 +37,8 @@ else
 fi
 
 if [[ "$missing" -eq 1 ]]; then
-  echo "[aws-openai] Prerequisite check failed."
+  echo "[aws] Prerequisite check failed."
   exit 1
 fi
 
-echo "[aws-openai] Prerequisite check passed."
+echo "[aws] Prerequisite check passed."

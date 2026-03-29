@@ -66,91 +66,203 @@ See [docs/setup-reference.md](docs/setup-reference.md) for:
 
 ## Current plugin lineup
 
-Live in this repo today, each with focused skills you can invoke immediately:
+Live in this repo today, grouped by use case so you can find the right plugin and skills quickly.
 
-- **`linear`** — Turn product requests into shipped work with issue triage and delivery workflows.
-  - **Skills:** `linear`
+TODO: auto-generate top-skill and expandable hidden-skill blocks from plugin metadata/scripts.
 
-- **`google-calendar`** — Plan smarter schedules, automate prep, and keep team calendars conflict-free.
-  - **Skills:** `google-calendar`, `google-calendar-daily-brief`, `google-calendar-free-up-time`, `google-calendar-group-scheduler` (+1 more)
+### Productivity
 
-- **`gmail`** — Triage inboxes fast and draft high-quality replies with context-aware workflows.
-  - **Skills:** `gmail`, `gmail-inbox-triage`
+#### `linear`
+Turn product requests into shipped work with issue triage and delivery workflows.
+- Top skills: `linear`
+- Skill count: `1`
 
-- **`slack`** — Summarize channels, triage notifications, and ship clear outbound updates in seconds.
-  - **Skills:** `slack`, `slack-channel-summarization`, `slack-daily-digest`, `slack-notification-triage` (+2 more)
+#### `google-calendar`
+Plan smarter schedules, automate prep, and keep team calendars conflict-free.
+- Top skills: `google-calendar`, `google-calendar-daily-brief`, `google-calendar-free-up-time`, `google-calendar-group-scheduler`
+  <details>
+  <summary>(+1 more)</summary>
+  `google-calendar-meeting-prep`
+  </details>
+- Skill count: `5`
 
-- **`canva`** — Generate polished visual assets and social-ready variants without leaving the terminal.
-  - **Skills:** `canva-branded-presentation`, `canva-resize-for-all-social-media`, `canva-translate-design`
+#### `gmail`
+Triage inboxes fast and draft high-quality replies with context-aware workflows.
+- Top skills: `gmail`, `gmail-inbox-triage`
+- Skill count: `2`
 
-- **`figma`** — Bridge design and code with component generation, system rules, and rapid design ops.
-  - **Skills:** `figma-code-connect-components`, `figma-create-design-system-rules`, `figma-create-new-file`, `figma-generate-design` (+3 more)
+#### `slack`
+Summarize channels, triage notifications, and ship clear outbound updates in seconds.
+- Top skills: `slack`, `slack-channel-summarization`, `slack-daily-digest`, `slack-notification-triage`
+  <details>
+  <summary>(+2 more)</summary>
+  `slack-outgoing-message`, `slack-reply-drafting`
+  </details>
+- Skill count: `6`
 
-- **`hugging-face`** — Production toolkit for model discovery, datasets, evals, Spaces, and inference flows.
-  - **Skills:** `cli`, `community-evals`, `datasets`, `gradio` (+7 more)
+#### `canva`
+Generate polished visual assets and social-ready variants without leaving the terminal.
+- Top skills: `canva-branded-presentation`, `canva-resize-for-all-social-media`, `canva-translate-design`
+- Skill count: `3`
 
-- **`jam`** — Capture and structure bug feedback loops to accelerate debugging and product quality.
-  - **Skills:** `coming soon` (plugin scaffold present, skill pack in progress)
+#### `figma`
+Bridge design and code with component generation, system rules, and rapid design ops.
+- Top skills: `figma-code-connect-components`, `figma-create-design-system-rules`, `figma-create-new-file`, `figma-generate-design`
+  <details>
+  <summary>(+3 more)</summary>
+  `figma-generate-library`, `figma-implement-design`, `figma-use`
+  </details>
+- Skill count: `7`
 
-- **`netlify`** — Deploy and operate modern web projects with streamlined Netlify-focused automation.
-  - **Skills:** `netlify-deploy`
+#### `jam`
+Capture and structure bug feedback loops to accelerate debugging and product quality.
+- Top skills: `coming soon`
+- Skill count: `0` (plugin scaffold present, skill pack in progress)
 
-- **`stripe`** — Build safer payment flows, upgrades, and integration decisions with battle-tested patterns.
-  - **Skills:** `stripe-best-practices`, `upgrade-stripe`
+#### `box`
+Automate secure file workflows and enterprise document operations at scale.
+- Top skills: `box`
+- Skill count: `1`
 
-- **`vercel`** — Ship full-stack apps faster with deep support for deploys, AI, observability, and infra.
-  - **Skills:** `agent-browser`, `agent-browser-verify`, `ai-elements`, `ai-gateway` (+43 more)
+#### `google-drive`
+Work across Docs, Sheets, and Drive assets with high-speed workspace automation.
+- Top skills: `google-docs`, `google-drive`, `google-sheets`, `google-sheets-chart-builder`
+  <details>
+  <summary>(+6 more)</summary>
+  `google-sheets-formula-builder`, `google-slides`, `google-slides-import-presentation`, `google-slides-template-migration`, `google-slides-template-surgery`, `google-slides-visual-iteration`
+  </details>
+- Skill count: `10`
 
-- **`game-studio`** — Prototype, playtest, and ship engaging game experiences across 2D/3D web stacks.
-  - **Skills:** `game-playtest`, `game-studio`, `game-ui-frontend`, `phaser-2d-game` (+5 more)
+#### `notion`
+Capture knowledge, transform notes into specs, and operationalize docs workflows.
+- Top skills: `notion-knowledge-capture`, `notion-meeting-intelligence`, `notion-research-documentation`, `notion-spec-to-implementation`
+- Skill count: `4`
 
-- **`box`** — Automate secure file workflows and enterprise document operations at scale.
-  - **Skills:** `box`
+### Developer Workflows
 
-- **`github`** — Run end-to-end repo operations: triage, CI fixes, review workflows, and PR publishing.
-  - **Skills:** `gh-address-comments`, `gh-fix-ci`, `github`, `yeet`
+#### `github`
+Run end-to-end repo operations: triage, CI fixes, review workflows, and PR publishing.
+- Top skills: `gh-address-comments`, `gh-fix-ci`, `github`, `yeet`
+- Skill count: `4`
 
-- **`google-drive`** — Work across Docs, Sheets, and Drive assets with high-speed workspace automation.
-  - **Skills:** `google-docs`, `google-drive`, `google-sheets`, `google-sheets-chart-builder` (+6 more)
+#### `build-ios-apps`
+Design, refactor, and debug SwiftUI apps with simulator-aware engineering workflows.
+- Top skills: `ios-debugger-agent`, `swiftui-liquid-glass`, `swiftui-performance-audit`, `swiftui-ui-patterns`
+  <details>
+  <summary>(+1 more)</summary>
+  `swiftui-view-refactor`
+  </details>
+- Skill count: `5`
 
-- **`notion`** — Capture knowledge, transform notes into specs, and operationalize docs workflows.
-  - **Skills:** `notion-knowledge-capture`, `notion-meeting-intelligence`, `notion-research-documentation`, `notion-spec-to-implementation`
+#### `build-web-apps`
+Create high-impact web products with deployment, UI, data, and payments best practices.
+- Top skills: `deploy-to-vercel`, `frontend-skill`, `react-best-practices`, `shadcn-best-practices`
+  <details>
+  <summary>(+3 more)</summary>
+  `stripe-best-practices`, `supabase-best-practices`, `web-design-guidelines`
+  </details>
+- Skill count: `7`
 
-- **`cloudflare`** — Build edge-native apps, agents, workers, and durable systems on Cloudflare.
-  - **Skills:** `agents-sdk`, `building-ai-agent-on-cloudflare`, `building-mcp-server-on-cloudflare`, `cloudflare` (+5 more)
+#### `test-android-apps`
+Automate Android app QA and emulator-driven validation for release confidence.
+- Top skills: `android-emulator-qa`
+- Skill count: `1`
 
-- **`sentry`** — Inspect real production issues and prioritize fixes with error-first operational visibility.
-  - **Skills:** `sentry`
+#### `superpowers`
+Advanced engineering execution skills for planning, debugging, reviews, and delivery.
+- Top skills: `brainstorming`, `dispatching-parallel-agents`, `executing-plans`, `finishing-a-development-branch`
+  <details>
+  <summary>(+10 more)</summary>
+  `receiving-code-review`, `requesting-code-review`, `subagent-driven-development`, `systematic-debugging`, `test-driven-development`, `using-git-worktrees`, `using-superpowers`, `verification-before-completion`, `writing-plans`, `writing-skills`
+  </details>
+- Skill count: `14`
 
-- **`build-ios-apps`** — Design, refactor, and debug SwiftUI apps with simulator-aware engineering workflows.
-  - **Skills:** `ios-debugger-agent`, `swiftui-liquid-glass`, `swiftui-performance-audit`, `swiftui-ui-patterns` (+1 more)
+#### `game-studio`
+Prototype, playtest, and ship engaging game experiences across 2D/3D web stacks.
+- Top skills: `game-playtest`, `game-studio`, `game-ui-frontend`, `phaser-2d-game`
+  <details>
+  <summary>(+5 more)</summary>
+  `react-three-fiber-game`, `sprite-pipeline`, `three-webgl-game`, `web-3d-asset-pipeline`, `web-game-foundations`
+  </details>
+- Skill count: `9`
 
-- **`build-web-apps`** — Create high-impact web products with deployment, UI, data, and payments best practices.
-  - **Skills:** `deploy-to-vercel`, `frontend-skill`, `react-best-practices`, `shadcn-best-practices` (+3 more)
+#### `saleor`
+Accelerate Saleor storefront architecture with practical, implementation-ready guidance.
+- Top skills: `saleor-paper-storefront`
+- Skill count: `1`
 
-- **`test-android-apps`** — Automate Android app QA and emulator-driven validation for release confidence.
-  - **Skills:** `android-emulator-qa`
+#### `medusa`
+Build and extend commerce backends, storefronts, and admin customizations with speed.
+- Top skills: `building-admin-dashboard-customizations`, `building-storefronts`, `building-with-medusa`, `db-generate`
+  <details>
+  <summary>(+4 more)</summary>
+  `db-migrate`, `learning-medusa`, `new-user`, `storefront-best-practices`
+  </details>
+- Skill count: `8`
 
-- **`aws`** — Design and operate secure AWS architectures, including OpenAI-powered workloads.
-  - **Skills:** `aws-openai-workflow`, `aws-workflow`
+#### `agentation`
+Add annotation-driven agent feedback loops directly into React product workflows.
+- Top skills: `agentation`
+- Skill count: `1`
 
-- **`medusa`** — Build and extend commerce backends, storefronts, and admin customizations with speed.
-  - **Skills:** `building-admin-dashboard-customizations`, `building-storefronts`, `building-with-medusa`, `db-generate` (+4 more)
+### Platform & Infrastructure
 
-- **`agentation`** — Add annotation-driven agent feedback loops directly into React product workflows.
-  - **Skills:** `agentation`
+#### `vercel`
+Ship full-stack apps faster with deep support for deploys, AI, observability, and infra.
+- Top skills: `agent-browser`, `agent-browser-verify`, `ai-elements`, `ai-gateway`
+  <details>
+  <summary>(+43 more)</summary>
+  `ai-generation-persistence`, `ai-sdk`, `auth`, `bootstrap`, `chat-sdk`, `cms`, `cron-jobs`, `deployments-cicd`, `email`, `env-vars`, `geist`, `geistdocs`, `investigation-mode`, `json-render`, `marketplace`, `micro`, `ncc`, `next-forge`, `nextjs`, `observability`, `payments`, `react-best-practices`, `routing-middleware`, `runtime-cache`, `satori`, `shadcn`, `sign-in-with-vercel`, `swr`, `turbopack`, `turborepo`, `v0-dev`, `vercel-agent`, `vercel-api`, `vercel-cli`, `vercel-firewall`, `vercel-flags`, `vercel-functions`, `vercel-queues`, `vercel-sandbox`, `vercel-services`, `vercel-storage`, `verification`, `workflow`
+  </details>
+- Skill count: `47`
 
-- **`resend`** — Operationalize email delivery from local dev to CI pipelines with Resend-native tooling.
-  - **Skills:** `resend-cli`
+#### `netlify`
+Deploy and operate modern web projects with streamlined Netlify-focused automation.
+- Top skills: `netlify-deploy`
+- Skill count: `1`
 
-- **`saleor`** — Accelerate Saleor storefront architecture with practical, implementation-ready guidance.
-  - **Skills:** `saleor-paper-storefront`
+#### `stripe`
+Build safer payment flows, upgrades, and integration decisions with battle-tested patterns.
+- Top skills: `stripe-best-practices`, `upgrade-stripe`
+- Skill count: `2`
 
-- **`supabase`** — Stand up and run Supabase projects with CLI-first setup and usage workflows.
-  - **Skills:** `cli`, `setup`, `supabase-usage`
+#### `cloudflare`
+Build edge-native apps, agents, workers, and durable systems on Cloudflare.
+- Top skills: `agents-sdk`, `building-ai-agent-on-cloudflare`, `building-mcp-server-on-cloudflare`, `cloudflare`
+  <details>
+  <summary>(+5 more)</summary>
+  `durable-objects`, `sandbox-sdk`, `web-perf`, `workers-best-practices`, `wrangler`
+  </details>
+- Skill count: `9`
 
-- **`superpowers`** — Advanced engineering execution skills for planning, debugging, reviews, and delivery.
-  - **Skills:** `brainstorming`, `dispatching-parallel-agents`, `executing-plans`, `finishing-a-development-branch` (+10 more)
+#### `sentry`
+Inspect real production issues and prioritize fixes with error-first operational visibility.
+- Top skills: `sentry`
+- Skill count: `1`
+
+#### `aws`
+Design and operate secure AWS architectures, including OpenAI-powered workloads.
+- Top skills: `aws-openai-workflow`, `aws-workflow`
+- Skill count: `2`
+
+#### `supabase`
+Stand up and run Supabase projects with CLI-first setup and usage workflows.
+- Top skills: `cli`, `setup`, `supabase-usage`
+- Skill count: `3`
+
+#### `resend`
+Operationalize email delivery from local dev to CI pipelines with Resend-native tooling.
+- Top skills: `resend-cli`
+- Skill count: `1`
+
+#### `hugging-face`
+Production toolkit for model discovery, datasets, evals, Spaces, and inference flows.
+- Top skills: `cli`, `community-evals`, `datasets`, `gradio`
+  <details>
+  <summary>(+7 more)</summary>
+  `jobs`, `llm-trainer`, `paper-publisher`, `papers`, `trackio`, `transformers.js`, `vision-trainer`
+  </details>
+- Skill count: `11`
 
 ## License
 

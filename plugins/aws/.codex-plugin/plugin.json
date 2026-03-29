@@ -1,7 +1,7 @@
 {
-  "name": "aws-openai",
+  "name": "aws",
   "version": "0.1.0",
-  "description": "Build and operate AWS workloads that integrate with OpenAI APIs.",
+  "description": "Build and operate AWS workloads, including OpenAI-integrated systems and AWS service workflows.",
   "author": {
     "name": "OpenAI",
     "email": "support@openai.com",
@@ -21,8 +21,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "aws",
-    "shortDescription": "AWS + OpenAI implementation workflows",
-    "longDescription": "Use AWS OpenAI for architecture, deployment, and operations guidance when integrating OpenAI APIs with AWS services such as Lambda, ECS, API Gateway, and observability stacks.",
+    "shortDescription": "AWS implementation workflows and MCP tooling",
+    "longDescription": "Use aws workflows for architecture, deployment, operations, and AWS MCP-backed guidance, including OpenAI-integrated workloads.",
     "developerName": "OpenAI",
     "category": "Coding",
     "capabilities": [

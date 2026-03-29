@@ -257,10 +257,10 @@
       "category": "Coding"
     },
     {
-      "name": "aws-openai",
+      "name": "aws",
       "source": {
         "source": "local",
-        "path": "./plugins/aws-openai"
+        "path": "./plugins/aws"
       },
       "policy": {
         "installation": "AVAILABLE",

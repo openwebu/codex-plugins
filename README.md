@@ -1,6 +1,6 @@
 # CODEX PLUGINS
 
-The official plugin workspace for Codex.
+A plugin workspace for Codex.
 
 Built for humans, AI agents, and CI/CD pipelines.
 
@@ -13,11 +13,110 @@ Built for humans, AI agents, and CI/CD pipelines.
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝
 ```
 
+## Quick install
+
+Run from this repo root (`$HOME/Documents/OPENAI/plugins` by default):
+
+### Linux
+
+```bash
+bash scripts/install_linux.sh
+```
+
+### Windows (Git Bash)
+
+```bash
+bash scripts/install_windows.sh
+```
+
+## Success check
+
+```bash
+ls -l "$HOME/plugins"
+ls -l "$HOME/.agents/plugins/marketplace.json"
+git config --get core.hooksPath
+scripts/sync_plugins_to_marketplace.py --dry-run
+```
+
+Expected:
+
+- `~/plugins` points to this repo's `plugins/`
+- `~/.agents/plugins/marketplace.json` points to this repo marketplace
+- `core.hooksPath` is `.githooks`
+
+---
+
+## Add a new plugin (fast path)
+
+```bash
+bash scripts/new-plugin.sh my-plugin
+```
+
+This command will:
+
+- validate the plugin name (`lowercase-hyphen`)
+- create `plugins/<name>/.codex-plugin/plugin.json`
+- run marketplace sync automatically
+- print exact `git add`, `git commit`, and `git push` commands
+
+### Manual fallback
+
+```bash
+mkdir -p plugins/my-plugin/.codex-plugin
+cat > plugins/my-plugin/.codex-plugin/plugin.json <<'JSON'
+{
+  "name": "my-plugin",
+  "interface": {
+    "displayName": "My Plugin"
+  }
+}
+JSON
+
+scripts/sync_plugins_to_marketplace.py
+git add plugins/my-plugin .agents/plugins/marketplace.json
+git commit -m "Add my-plugin"
+git push
+```
+
+---
+
+## Automatic sync on push
+
+This repo uses `.githooks/pre-push`.
+
+On every `git push`, it runs:
+
+```bash
+scripts/sync_plugins_to_marketplace.py
+```
+
+If marketplace changes are detected and not committed, push is blocked so you can commit first.
+
+---
+
+## Advanced / manual setup
+
+Use this if you want full manual control instead of installer scripts.
+
+```bash
+REPO_DIR="${REPO_DIR:-$HOME/Documents/OPENAI/plugins}"
+cd "$REPO_DIR"
+
+ln -sfn "$REPO_DIR/plugins" "$HOME/plugins"
+mkdir -p "$HOME/.agents/plugins"
+ln -sfn "$REPO_DIR/.agents/plugins/marketplace.json" "$HOME/.agents/plugins/marketplace.json"
+
+git config core.hooksPath .githooks
+scripts/sync_plugins_to_marketplace.py
+```
+
+---
+
 ## What this repo contains
 
 Each plugin lives under `plugins/<name>/` and must include:
 
-- `.codex-plugin/plugin.json` (required)
+- `.codex-plugin/plugin.json`
 
 Optional plugin surfaces:
 
@@ -28,128 +127,6 @@ Optional plugin surfaces:
 - `commands/`
 - `hooks.json`
 - `assets/`
-
----
-
-## One-time setup (global registration)
-
-Run this once to use this repo's plugins as your global Codex plugin source.
-
-```bash
-cd /home/deadpool/Documents/OPENAI/plugins
-
-# 1) Global plugin directory points to this repo's plugins/
-ln -sfn "$(pwd)/plugins" /home/deadpool/plugins
-
-# 2) Global marketplace points to this repo marketplace
-mkdir -p /home/deadpool/.agents/plugins
-ln -sfn "$(pwd)/.agents/plugins/marketplace.json" /home/deadpool/.agents/plugins/marketplace.json
-
-# 3) Enable git hooks from .githooks/
-git config core.hooksPath .githooks
-```
-
----
-
-## Add a new plugin to existing plugins (tutorial)
-
-Use this flow every time you create a new plugin.
-
-### 1) Create plugin folder + manifest
-
-```bash
-cd /home/deadpool/Documents/OPENAI/plugins
-mkdir -p plugins/my-plugin/.codex-plugin
-
-cat > plugins/my-plugin/.codex-plugin/plugin.json <<'JSON'
-{
-  "name": "my-plugin",
-  "interface": {
-    "displayName": "My Plugin"
-  }
-}
-JSON
-```
-
-### 2) Sync marketplace entries
-
-```bash
-/home/deadpool/Documents/OPENAI/plugins/scripts/sync_plugins_to_marketplace.py
-```
-
-What this script does:
-
-- scans `plugins/*`
-- registers only folders that contain `.codex-plugin/plugin.json`
-- adds missing entries in `.agents/plugins/marketplace.json`
-- fills missing required defaults (`source`, `policy`, `category`)
-- never removes existing plugins
-
-### 3) Commit and push
-
-```bash
-git add plugins/my-plugin .agents/plugins/marketplace.json
-git commit -m "Add my-plugin"
-git push
-```
-
----
-
-## Automatic on `git push`
-
-This repo includes a `pre-push` hook at `.githooks/pre-push`.
-
-On every `git push`, it automatically runs:
-
-```bash
-/home/deadpool/Documents/OPENAI/plugins/scripts/sync_plugins_to_marketplace.py
-```
-
-If the sync creates or detects uncommitted marketplace changes, push is blocked so you can commit first.
-
-### Typical flow when push is blocked
-
-```bash
-git add .agents/plugins/marketplace.json
-git commit -m "Sync marketplace"
-git push
-```
-
----
-
-## Manual commands
-
-### Dry run sync
-
-```bash
-/home/deadpool/Documents/OPENAI/plugins/scripts/sync_plugins_to_marketplace.py --dry-run
-```
-
-### Custom paths
-
-```bash
-/home/deadpool/Documents/OPENAI/plugins/scripts/sync_plugins_to_marketplace.py \
-  --plugins-dir /some/path/plugins \
-  --marketplace /some/path/.agents/plugins/marketplace.json
-```
-
----
-
-## Local development
-
-### Prerequisites
-
-- Python 3.9+
-- Git
-
-### Validate sync behavior
-
-```bash
-cd /home/deadpool/Documents/OPENAI/plugins
-scripts/sync_plugins_to_marketplace.py --dry-run
-```
-
----
 
 ## License
 

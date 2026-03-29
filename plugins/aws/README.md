@@ -1,6 +1,6 @@
-# AWS OpenAI Plugin
+# aws Plugin
 
-Build and operate AWS workloads that integrate with OpenAI APIs.
+Build and operate AWS workloads, including OpenAI-integrated systems.
 
 ## Overview
 
@@ -22,7 +22,7 @@ This plugin provides AWS-focused guidance for OpenAI-powered systems:
 
 | Server | Description |
 | --- | --- |
-| `aws-mcp` | AWS MCP endpoint for AWS documentation and service workflows |
+| `aws-mcp` | AWS CLI MCP proxy (`uvx mcp-proxy-for-aws@latest`) for AWS documentation and service workflows |
 
 ## Prerequisites
 

@@ -1,0 +1,48 @@
+{
+  "name": "medusa",
+  "version": "1.0.8",
+  "description": "Build and extend Medusa applications across backend modules, workflows, admin dashboard customizations, and storefront integrations.",
+  "author": {
+    "name": "Medusa",
+    "email": "support@medusajs.com",
+    "url": "https://medusajs.com"
+  },
+  "homepage": "https://medusajs.com",
+  "repository": "https://github.com/medusajs/medusa-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "medusa",
+    "ecommerce",
+    "backend",
+    "storefront",
+    "admin",
+    "workflows",
+    "modules"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Medusa",
+    "shortDescription": "Build Medusa backend, admin, and storefront features with guided skills",
+    "longDescription": "Use Medusa workflows to implement modules, workflows, API routes, admin dashboard extensions, storefront integrations, and guided learning paths with MedusaDocs MCP support.",
+    "developerName": "Medusa",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://medusajs.com",
+    "privacyPolicyURL": "https://medusajs.com/privacy-policy/",
+    "termsOfServiceURL": "https://medusajs.com/terms/",
+    "defaultPrompt": [
+      "Implement a Medusa backend feature with module, workflow, and API route",
+      "Help me extend my Medusa admin dashboard with custom widgets and pages",
+      "Integrate a Medusa custom API route into my storefront with SDK best practices"
+    ],
+    "brandColor": "#10101B",
+    "composerIcon": "./assets/medusa-small.svg",
+    "logo": "./assets/medusa-logo.svg",
+    "screenshots": []
+  }
+}

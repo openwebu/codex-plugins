@@ -1,0 +1,43 @@
+{
+  "name": "migration-to-aws",
+  "version": "1.0.0",
+  "description": "Estimate migration options to AWS and compare service/pricing outcomes from existing cloud usage.",
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com/"
+  },
+  "homepage": "https://github.com/awslabs/agent-plugins",
+  "repository": "https://github.com/awslabs/agent-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "aws",
+    "gcp",
+    "google-cloud",
+    "migration",
+    "cloud-migration",
+    "terraform",
+    "fargate"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Migration to AWS",
+    "shortDescription": "Cloud migration planning and AWS cost comparison guidance",
+    "longDescription": "Assess current cloud usage, estimate AWS alternatives, compare pricing outcomes, and guide migration planning and execution steps.",
+    "developerName": "Amazon Web Services",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://aws.amazon.com/migration-hub/",
+    "privacyPolicyURL": "https://aws.amazon.com/privacy/",
+    "termsOfServiceURL": "https://aws.amazon.com/service-terms/",
+    "defaultPrompt": [
+      "Analyze this workload and create a migration plan to AWS"
+    ],
+    "brandColor": "#232F3E",
+    "screenshots": []
+  }
+}

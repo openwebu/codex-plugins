@@ -1,0 +1,50 @@
+{
+  "name": "databases-on-aws",
+  "version": "1.0.0",
+  "description": "Expert database guidance for AWS services, including schema design, migrations, and workload fit.",
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com/"
+  },
+  "homepage": "https://github.com/awslabs/agent-plugins",
+  "repository": "https://github.com/awslabs/agent-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "aws",
+    "aurora",
+    "database",
+    "databases",
+    "distributed-sql",
+    "dsql",
+    "iam-auth",
+    "migration",
+    "postgresql",
+    "postgres",
+    "schema",
+    "serverless",
+    "sql"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Databases on AWS",
+    "shortDescription": "Database architecture and operations guidance for AWS",
+    "longDescription": "Design schemas, run migrations, choose the right AWS database service, and troubleshoot operational issues across AWS data platforms.",
+    "developerName": "Amazon Web Services",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://aws.amazon.com/products/databases/",
+    "privacyPolicyURL": "https://aws.amazon.com/privacy/",
+    "termsOfServiceURL": "https://aws.amazon.com/service-terms/",
+    "defaultPrompt": [
+      "Help me choose and implement the right AWS database architecture"
+    ],
+    "brandColor": "#232F3E",
+    "screenshots": []
+  }
+}

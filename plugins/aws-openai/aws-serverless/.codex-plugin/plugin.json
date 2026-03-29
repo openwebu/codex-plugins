@@ -1,0 +1,46 @@
+{
+  "name": "aws-serverless",
+  "version": "1.0.0",
+  "description": "Design, build, deploy, test, and debug serverless applications with AWS services.",
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com/"
+  },
+  "homepage": "https://github.com/awslabs/agent-plugins",
+  "repository": "https://github.com/awslabs/agent-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "aws",
+    "lambda",
+    "durable functions",
+    "serverless",
+    "development",
+    "sam",
+    "api-gateway",
+    "eventbridge",
+    "step-functions"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "AWS Serverless",
+    "shortDescription": "AWS Lambda and serverless implementation workflows",
+    "longDescription": "Design and operate serverless systems on AWS with guidance for Lambda, API Gateway, EventBridge, Step Functions, deployment patterns, and troubleshooting.",
+    "developerName": "Amazon Web Services",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://aws.amazon.com/serverless/",
+    "privacyPolicyURL": "https://aws.amazon.com/privacy/",
+    "termsOfServiceURL": "https://aws.amazon.com/service-terms/",
+    "defaultPrompt": [
+      "Help me design and deploy a production-grade AWS serverless architecture"
+    ],
+    "brandColor": "#232F3E",
+    "screenshots": []
+  }
+}

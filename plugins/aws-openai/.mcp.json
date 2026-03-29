@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "aws-mcp": {
+      "type": "http",
+      "url": "https://aws-mcp.us-east-1.api.aws/mcp",
+      "note": "AWS MCP server endpoint for AWS docs and service workflows."
+    }
+  }
+}

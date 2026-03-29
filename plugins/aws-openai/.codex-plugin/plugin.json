@@ -1,0 +1,46 @@
+{
+  "name": "aws-openai",
+  "version": "0.1.0",
+  "description": "Build and operate AWS workloads that integrate with OpenAI APIs.",
+  "author": {
+    "name": "OpenAI",
+    "email": "support@openai.com",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://aws.amazon.com/",
+  "repository": "https://github.com/openai/plugins",
+  "license": "MIT",
+  "keywords": [
+    "aws",
+    "openai",
+    "bedrock",
+    "serverless",
+    "infrastructure"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "AWS OpenAI",
+    "shortDescription": "AWS + OpenAI implementation workflows",
+    "longDescription": "Use AWS OpenAI for architecture, deployment, and operations guidance when integrating OpenAI APIs with AWS services such as Lambda, ECS, API Gateway, and observability stacks.",
+    "developerName": "OpenAI",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://aws.amazon.com/",
+    "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/terms-of-use/",
+    "defaultPrompt": [
+      "Design an AWS architecture for an OpenAI-powered API",
+      "Set up secure secret management for OpenAI API keys on AWS",
+      "Troubleshoot latency and cost for OpenAI workloads on AWS"
+    ],
+    "brandColor": "#232F3E",
+    "composerIcon": "./assets/aws-openai-small.svg",
+    "logo": "./assets/aws-openai.svg",
+    "screenshots": []
+  }
+}

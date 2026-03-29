@@ -1,25 +1,32 @@
 ---
 name: new-user
 description: Create an admin user in Medusa
-argument-hint: <email> <password>
+argument-hint: <email> [password]
 allowed-tools: Bash(npx medusa user:*)
 ---
 
 # Create Admin User
 
-Create a new admin user in Medusa with the specified email and password.
+Create a new admin user in Medusa using docs-canonical flags.
 
-The user will provide two arguments:
-- First argument: email address
-- Second argument: password
+The user provides:
+- First argument: email address (required)
+- Second argument: password (optional)
 
-For example: `/medusa-dev:user admin@test.com supersecret`
+For example:
+- `/medusa:new-user admin@test.com supersecret`
+- `/medusa:new-user admin@test.com` (creates an invite)
 
-Use the Bash tool to execute the command `npx medusa user -e <email> -p <password>`, replacing `<email>` with the first argument and `<password>` with the second argument.
+Use the Bash tool:
+- If password is provided: `npx medusa user --email <email> --password <password>`
+- If password is omitted: `npx medusa user --email <email> --invite`
+
+Equivalent package manager form: `yarn medusa user --email <email> [--password <password> | --invite]`.
 
 Report the results to the user, including:
 
-- Confirmation that the admin user was created successfully
+- Confirmation that the admin user or invite was created successfully
 - The email address of the created user
+- Invite token output (if `--invite` was used)
 - Any errors that occurred
-- Next steps (e.g., logging in to the admin dashboard)
+- Next steps (e.g., accepting invite or logging in to the admin dashboard)

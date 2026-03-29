@@ -1,0 +1,48 @@
+{
+  "name": "docker",
+  "version": "0.1.0",
+  "description": "Docker plugin for container-first workflows: local image builds, compose dev loops, registry publishing, and container debugging, with secondary Go maintenance skills.",
+  "author": {
+    "name": "Docker",
+    "url": "https://www.docker.com/"
+  },
+  "homepage": "https://www.docker.com/",
+  "repository": "https://github.com/docker",
+  "license": "Apache-2.0",
+  "keywords": [
+    "docker",
+    "container",
+    "compose",
+    "image-build",
+    "publish",
+    "debug",
+    "go",
+    "dependencies",
+    "automation",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docker",
+    "shortDescription": "Container build, compose, publish, and debug workflows in Codex",
+    "longDescription": "Use Docker skill workflows in Codex sessions to build local images, run compose-based development loops, publish images to Docker Hub/GHCR/private registries, and debug running containers. Includes secondary Go dependency maintenance skills.",
+    "developerName": "Docker",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.docker.com/",
+    "privacyPolicyURL": "https://www.docker.com/legal/docker-privacy-policy/",
+    "termsOfServiceURL": "https://www.docker.com/legal/docker-software-end-user-license-agreement/",
+    "defaultPrompt": [
+      "Use docker:docker-build-local-images to build and validate a local Docker image from this repository",
+      "Use docker:docker-compose-dev-loop to run a fast edit-build-run loop with docker compose",
+      "Use docker:docker-publish-images to publish image tags to Docker Hub, GHCR, or a private registry",
+      "Use docker:docker-debug-containers to diagnose failing containers with logs, inspect, and exec-based checks"
+    ],
+    "brandColor": "#2496ED",
+    "screenshots": []
+  }
+}

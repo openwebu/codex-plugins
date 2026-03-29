@@ -53,6 +53,15 @@ Requirements:
 - Keep naming consistent between folder/repo identity and README label.
 - Do not leave source folders undocumented in that section.
 
+## Canonical Repository Link Rule
+
+The canonical repository URL for this project is:
+
+- `https://github.com/openwebu/codex-plugins`
+
+Whenever this repository is referenced in README/docs/posts/templates, always use the canonical URL above.
+Do not use alternate repository URLs for this project in maintained docs.
+
 The baseline source repository set that must remain represented in README:
 - `agent-plugins`
 - `aws-cli`

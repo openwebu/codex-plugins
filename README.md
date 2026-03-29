@@ -30,6 +30,7 @@ open-source ecosystems, enterprise platforms, and modern CLI-driven stacks.
   - [x] Use structured implementation workflows from `superpowers` (planning, debugging, TDD, verification, code review).
   - [x] Run plugin-specific CLI workflows with `supabase` (`cli`) and `resend` (`resend-cli`).
   - [x] Run local filesystem and terminal automation workflows with `desktop-commander` (`desktop-commander-ops`).
+  - [x] Standardize container build, compose, publish, and debug loops with `docker` (`docker-build-local-images`, `docker-compose-dev-loop`, `docker-publish-images`, `docker-debug-containers`).
   - [x] Use integration-focused workflows for cloud/platform ops with `aws`, `cloudflare`, `vercel`, and `netlify`.
   - [x] Triage production signals with `sentry` and feed fixes into repo workflows with `github`.
 
@@ -86,7 +87,7 @@ This repository follows strict governance in [AGENTS.md](./AGENTS.md):
 - [ ] GitLab plugin — Manage merge requests, CI pipelines, and repo triage outside GitHub.
 - [ ] Jira plugin — Link implementation work to issue triage, sprint flow, and delivery status.
 - [ ] Kubernetes plugin — Diagnose cluster/app rollout issues with kubectl-first operational workflows.
-- [ ] Docker plugin — Standardize local container build, compose, publish, and debug flows.
+- [x] Docker plugin — Standardize local container build, compose, publish, and debug flows.
 - [ ] Firebase plugin — Support Auth, Firestore, Hosting, and Functions workflows.
 - [ ] Render/Railway/Fly.io plugins — Expand non-Vercel/Netlify deployment coverage.
 
@@ -416,12 +417,16 @@ Set up secure SSH aliases for reusable remote access and run Supabase CLI comman
 - Top skills: `remote-supabase-ops`, `setup-profile`
 - Skill count: `2`
 
-#### [`docker-agent`](./plugins/docker-agent)
+#### [`docker`](./plugins/docker)
 
-Validation-first Go maintenance workflows for dependency audits, vuln triage, upgrade planning, and safe bumps.
+Container-first workflows for local image build, compose dev loops, registry-agnostic publish, and runtime debugging.
 
-- Top skills: `audit-go-dependencies`, `triage-go-vulnerabilities`, `plan-go-major-upgrades`, `bump-go-dependencies`
-- Skill count: `4`
+- Top skills: `docker-build-local-images`, `docker-compose-dev-loop`, `docker-publish-images`, `docker-debug-containers`
+  <details>
+  <summary>Show 4 more skills</summary>
+  More skills: `audit-go-dependencies`, `triage-go-vulnerabilities`, `plan-go-major-upgrades`, `bump-go-dependencies`
+  </details>
+- Skill count: `8`
 
 #### [`resend`](./plugins/resend)
 
@@ -456,7 +461,7 @@ These are the source repositories used to create and evolve skills across this p
 - [DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP)
 - [medusa-agent-skills](https://github.com/medusajs/medusa-agent-skills)
 - [openai/plugins](https://github.com/openai/plugins) _(official upstream plugin repository)_
-- [plugins](https://github.com/NagyVikt/openplugins)
+- [plugins](https://github.com/openwebu/codex-plugins)
 - [resend-cli](https://github.com/resend/resend-cli)
 - [resend-mcp](https://github.com/resend/resend-mcp)
 - [saleor-paper-storefront](https://github.com/saleor/agent-skills) _(base reference for the Saleor storefront skill pack)_

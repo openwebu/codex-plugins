@@ -59,4 +59,4 @@ Use markdown tables for risk and gating decisions so the plan can be copied dire
 
 This skill is for planning and sequencing, not unbounded execution.
 For non-breaking updates discovered during planning, hand off to:
-- `docker-agent:bump-go-dependencies`.
+- `docker:bump-go-dependencies`.

@@ -1,0 +1,78 @@
+{
+  "source": "/home/deadpool/Documents/OPENAI/MEDUSA/PLUGINS",
+  "excluded": [
+    "medusa-test-plugin"
+  ],
+  "plugins": [
+    {
+      "slug": "medusa-booking-system",
+      "packageName": "@rsc-labs/medusa-booking-system",
+      "compatibility": "v2",
+      "category": "booking",
+      "notes": "Booking resources, availability rules, and booking workflows."
+    },
+    {
+      "slug": "medusa-documents",
+      "packageName": "@rsc-labs/medusa-documents-v2",
+      "compatibility": "v2",
+      "category": "documents",
+      "notes": "PDF documents such as invoice and packing slip."
+    },
+    {
+      "slug": "medusa-paypal-payment",
+      "packageName": "@rsc-labs/medusa-paypal-payment",
+      "compatibility": "v2",
+      "category": "payments",
+      "notes": "PayPal payment provider integration."
+    },
+    {
+      "slug": "medusa-price-history",
+      "packageName": "@rsc-labs/medusa-price-history",
+      "compatibility": "v2",
+      "category": "analytics",
+      "notes": "Variant price history tracking."
+    },
+    {
+      "slug": "medusa-products-bought-together",
+      "packageName": "@rsc-labs/medusa-products-bought-together-v2",
+      "compatibility": "v2",
+      "category": "recommendations",
+      "notes": "Frequently bought-together product API."
+    },
+    {
+      "slug": "medusa-square-payment",
+      "packageName": "@rsc-labs/medusa-square-payment",
+      "compatibility": "v2",
+      "category": "payments",
+      "notes": "Square payment provider integration."
+    },
+    {
+      "slug": "medusa-store-analytics",
+      "packageName": "@rsc-labs/medusa-store-analytics-v2",
+      "compatibility": "v2",
+      "category": "analytics",
+      "notes": "Store analytics dashboards and metrics."
+    },
+    {
+      "slug": "medusa-wishlist",
+      "packageName": "@rsc-labs/medusa-wishlist",
+      "compatibility": "v2",
+      "category": "storefront",
+      "notes": "Customer wishlist and sharing support."
+    },
+    {
+      "slug": "medusa-affiliate-discount",
+      "packageName": "@rsc-labs/medusa-affiliate-discount",
+      "compatibility": "legacy-v1",
+      "category": "discounts",
+      "notes": "Affiliate discounts. Marked legacy in upstream README."
+    },
+    {
+      "slug": "medusa-marketing",
+      "packageName": "@rsc-labs/medusa-marketing",
+      "compatibility": "legacy-v1",
+      "category": "marketing",
+      "notes": "Email and customer action messaging. Marked legacy in upstream README."
+    }
+  ]
+}

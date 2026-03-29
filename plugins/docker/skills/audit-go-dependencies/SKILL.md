@@ -59,7 +59,7 @@ Example:
 ```markdown
 | Module | Current | Latest | Signal | Priority | Recommended action |
 |--------|---------|--------|--------|----------|--------------------|
-| github.com/example/a | v1.2.0 | v1.4.1 | outdated | P2 | bump with docker-agent:bump-go-dependencies |
+| github.com/example/a | v1.2.0 | v1.4.1 | outdated | P2 | bump with docker:bump-go-dependencies |
 | github.com/example/b | v0.0.0-20240101-abcdef | v0.9.0 | pseudo | P1 | replace pseudo pin with tagged release and test |
 ```
 ~~~
@@ -68,5 +68,5 @@ Example:
 
 Do not perform bulk upgrades in this skill.
 If execution is requested, hand off to:
-- `docker-agent:bump-go-dependencies` for minor/patch updates,
-- `docker-agent:plan-go-major-upgrades` for major version moves.
+- `docker:bump-go-dependencies` for minor/patch updates,
+- `docker:plan-go-major-upgrades` for major version moves.

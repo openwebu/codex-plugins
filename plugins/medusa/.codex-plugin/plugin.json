@@ -1,6 +1,6 @@
 {
   "name": "medusa",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Build and extend Medusa applications across backend modules, workflows, admin dashboard customizations, and storefront integrations.",
   "author": {
     "name": "Medusa",
@@ -38,7 +38,8 @@
     "defaultPrompt": [
       "Implement a Medusa backend feature with module, workflow, and API route",
       "Help me extend my Medusa admin dashboard with custom widgets and pages",
-      "Integrate a Medusa custom API route into my storefront with SDK best practices"
+      "Integrate a Medusa custom API route into my storefront with SDK best practices",
+      "Recommend the right plugin from the Medusa community plugin catalog for my use case"
     ],
     "brandColor": "#10101B",
     "composerIcon": "./assets/medusa-small.svg",

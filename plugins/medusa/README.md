@@ -16,9 +16,9 @@ Medusa helps you build backend, admin, and storefront ecommerce features with do
 - `building-admin-dashboard-customizations`
 - `building-storefronts`
 - `building-with-medusa`
-- `db-generate`
+- `plugin-catalog`
 <details>
-<summary>Show all skills (8)</summary>
+<summary>Show all skills (9)</summary>
 
 - `building-admin-dashboard-customizations`
 - `building-storefronts`
@@ -27,6 +27,7 @@ Medusa helps you build backend, admin, and storefront ecommerce features with do
 - `db-migrate`
 - `learning-medusa`
 - `new-user`
+- `plugin-catalog`
 - `storefront-best-practices`
 </details>
 
@@ -34,6 +35,32 @@ Medusa helps you build backend, admin, and storefront ecommerce features with do
 - Builds Medusa backend modules, workflows, API routes, and data models.
 - Supports admin dashboard customizations and storefront integrations.
 - Includes MedusaDocs MCP support for up-to-date implementation guidance.
+
+## Commands Included
+1. `/medusa:new-user <email> [password]`: Create an admin user (`--email/--password`) or an invite (`--invite` when password is omitted).
+2. `/medusa:db-generate <module-name>`: Generate migrations for a module.
+3. `/medusa:db-migrate`: Apply pending database migrations.
+4. `/medusa:plugin-catalog [goal-or-plugin]`: List curated `MEDUSA/PLUGINS` entries and get install/config snippets.
+
+## Community Plugin Catalog
+
+The Medusa plugin now includes a curated catalog based on local `MEDUSA/PLUGINS` entries:
+
+### Medusa v2-focused
+
+- `@rsc-labs/medusa-booking-system`
+- `@rsc-labs/medusa-documents-v2`
+- `@rsc-labs/medusa-paypal-payment`
+- `@rsc-labs/medusa-price-history`
+- `@rsc-labs/medusa-products-bought-together-v2`
+- `@rsc-labs/medusa-square-payment`
+- `@rsc-labs/medusa-store-analytics-v2`
+- `@rsc-labs/medusa-wishlist`
+
+### Legacy (Medusa v1-oriented)
+
+- `@rsc-labs/medusa-affiliate-discount`
+- `@rsc-labs/medusa-marketing`
 
 ## Why Use It
 - Covers the full Medusa stack in one plugin instead of piecing workflows together.

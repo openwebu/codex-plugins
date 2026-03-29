@@ -45,8 +45,8 @@ For each finding:
 - If no fix available: mark `mitigate-and-monitor` with rationale.
 
 Then map each remediation to one of:
-- patch/minor bump via `docker-agent:bump-go-dependencies`,
-- major upgrade plan via `docker-agent:plan-go-major-upgrades`,
+- patch/minor bump via `docker:bump-go-dependencies`,
+- major upgrade plan via `docker:plan-go-major-upgrades`,
 - temporary risk acceptance with explicit owner and follow-up window.
 
 ## 4. Validate Any Changes

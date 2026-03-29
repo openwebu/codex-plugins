@@ -353,10 +353,10 @@
       "category": "Coding"
     },
     {
-      "name": "docker-agent",
+      "name": "docker",
       "source": {
         "source": "local",
-        "path": "./plugins/docker-agent"
+        "path": "./plugins/docker"
       },
       "policy": {
         "installation": "AVAILABLE",

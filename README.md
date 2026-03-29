@@ -113,12 +113,12 @@ TODO: auto-generate top-skill and expandable hidden-skill blocks from plugin met
 
 ### Productivity
 
-#### `linear`
+#### [`linear`](./plugins/linear)
 Turn product requests into shipped work with issue triage and delivery workflows.
 - Top skills: `linear`
 - Skill count: `1`
 
-#### `google-calendar`
+#### [`google-calendar`](./plugins/google-calendar)
 Plan smarter schedules, automate prep, and keep team calendars conflict-free.
 - Top skills: `google-calendar`, `google-calendar-daily-brief`, `google-calendar-free-up-time`, `google-calendar-group-scheduler`
   <details>
@@ -127,12 +127,12 @@ Plan smarter schedules, automate prep, and keep team calendars conflict-free.
   </details>
 - Skill count: `5`
 
-#### `gmail`
+#### [`gmail`](./plugins/gmail)
 Triage inboxes fast and draft high-quality replies with context-aware workflows.
 - Top skills: `gmail`, `gmail-inbox-triage`
 - Skill count: `2`
 
-#### `slack`
+#### [`slack`](./plugins/slack)
 Summarize channels, triage notifications, and ship clear outbound updates in seconds.
 - Top skills: `slack`, `slack-channel-summarization`, `slack-daily-digest`, `slack-notification-triage`
   <details>
@@ -141,12 +141,12 @@ Summarize channels, triage notifications, and ship clear outbound updates in sec
   </details>
 - Skill count: `6`
 
-#### `canva`
+#### [`canva`](./plugins/canva)
 Generate polished visual assets and social-ready variants without leaving the terminal.
 - Top skills: `canva-branded-presentation`, `canva-resize-for-all-social-media`, `canva-translate-design`
 - Skill count: `3`
 
-#### `figma`
+#### [`figma`](./plugins/figma)
 Bridge design and code with component generation, system rules, and rapid design ops.
 - Top skills: `figma-code-connect-components`, `figma-create-design-system-rules`, `figma-create-new-file`, `figma-generate-design`
   <details>
@@ -155,17 +155,17 @@ Bridge design and code with component generation, system rules, and rapid design
   </details>
 - Skill count: `7`
 
-#### `jam`
+#### [`jam`](./plugins/jam)
 Capture and structure bug feedback loops to accelerate debugging and product quality.
 - Top skills: `coming soon`
 - Skill count: `0` (plugin scaffold present, skill pack in progress)
 
-#### `box`
+#### [`box`](./plugins/box)
 Automate secure file workflows and enterprise document operations at scale.
 - Top skills: `box`
 - Skill count: `1`
 
-#### `google-drive`
+#### [`google-drive`](./plugins/google-drive)
 Work across Docs, Sheets, and Drive assets with high-speed workspace automation.
 - Top skills: `google-docs`, `google-drive`, `google-sheets`, `google-sheets-chart-builder`
   <details>
@@ -174,19 +174,19 @@ Work across Docs, Sheets, and Drive assets with high-speed workspace automation.
   </details>
 - Skill count: `10`
 
-#### `notion`
+#### [`notion`](./plugins/notion)
 Capture knowledge, transform notes into specs, and operationalize docs workflows.
 - Top skills: `notion-knowledge-capture`, `notion-meeting-intelligence`, `notion-research-documentation`, `notion-spec-to-implementation`
 - Skill count: `4`
 
 ### Developer Workflows
 
-#### `github`
+#### [`github`](./plugins/github)
 Run end-to-end repo operations: triage, CI fixes, review workflows, and PR publishing.
 - Top skills: `gh-address-comments`, `gh-fix-ci`, `github`, `yeet`
 - Skill count: `4`
 
-#### `build-ios-apps`
+#### [`build-ios-apps`](./plugins/build-ios-apps)
 Design, refactor, and debug SwiftUI apps with simulator-aware engineering workflows.
 - Top skills: `ios-debugger-agent`, `swiftui-liquid-glass`, `swiftui-performance-audit`, `swiftui-ui-patterns`
   <details>
@@ -195,7 +195,7 @@ Design, refactor, and debug SwiftUI apps with simulator-aware engineering workfl
   </details>
 - Skill count: `5`
 
-#### `build-web-apps`
+#### [`build-web-apps`](./plugins/build-web-apps)
 Create high-impact web products with deployment, UI, data, and payments best practices.
 - Top skills: `deploy-to-vercel`, `frontend-skill`, `react-best-practices`, `shadcn-best-practices`
   <details>
@@ -204,12 +204,12 @@ Create high-impact web products with deployment, UI, data, and payments best pra
   </details>
 - Skill count: `7`
 
-#### `test-android-apps`
+#### [`test-android-apps`](./plugins/test-android-apps)
 Automate Android app QA and emulator-driven validation for release confidence.
 - Top skills: `android-emulator-qa`
 - Skill count: `1`
 
-#### `superpowers`
+#### [`superpowers`](./plugins/superpowers)
 Advanced engineering execution skills for planning, debugging, reviews, and delivery.
 - Top skills: `brainstorming`, `dispatching-parallel-agents`, `executing-plans`, `finishing-a-development-branch`
   <details>
@@ -218,7 +218,7 @@ Advanced engineering execution skills for planning, debugging, reviews, and deli
   </details>
 - Skill count: `14`
 
-#### `game-studio`
+#### [`game-studio`](./plugins/game-studio)
 Prototype, playtest, and ship engaging game experiences across 2D/3D web stacks.
 - Top skills: `game-playtest`, `game-studio`, `game-ui-frontend`, `phaser-2d-game`
   <details>
@@ -227,12 +227,12 @@ Prototype, playtest, and ship engaging game experiences across 2D/3D web stacks.
   </details>
 - Skill count: `9`
 
-#### `saleor`
+#### [`saleor`](./plugins/saleor)
 Accelerate Saleor storefront architecture with practical, implementation-ready guidance.
 - Top skills: `saleor-paper-storefront`
 - Skill count: `1`
 
-#### `medusa`
+#### [`medusa`](./plugins/medusa)
 Build and extend commerce backends, storefronts, and admin customizations with speed.
 - Top skills: `building-admin-dashboard-customizations`, `building-storefronts`, `building-with-medusa`, `db-generate`
   <details>
@@ -241,14 +241,14 @@ Build and extend commerce backends, storefronts, and admin customizations with s
   </details>
 - Skill count: `8`
 
-#### `agentation`
+#### [`agentation`](./plugins/agentation)
 Add annotation-driven agent feedback loops directly into React product workflows.
 - Top skills: `agentation`
 - Skill count: `1`
 
 ### Platform & Infrastructure
 
-#### `vercel`
+#### [`vercel`](./plugins/vercel)
 Ship full-stack apps faster with deep support for deploys, AI, observability, and infra.
 - Top skills: `agent-browser`, `agent-browser-verify`, `ai-elements`, `ai-gateway`
   <details>
@@ -257,17 +257,17 @@ Ship full-stack apps faster with deep support for deploys, AI, observability, an
   </details>
 - Skill count: `47`
 
-#### `netlify`
+#### [`netlify`](./plugins/netlify)
 Deploy and operate modern web projects with streamlined Netlify-focused automation.
 - Top skills: `netlify-deploy`
 - Skill count: `1`
 
-#### `stripe`
+#### [`stripe`](./plugins/stripe)
 Build safer payment flows, upgrades, and integration decisions with battle-tested patterns.
 - Top skills: `stripe-best-practices`, `upgrade-stripe`
 - Skill count: `2`
 
-#### `cloudflare`
+#### [`cloudflare`](./plugins/cloudflare)
 Build edge-native apps, agents, workers, and durable systems on Cloudflare.
 - Top skills: `agents-sdk`, `building-ai-agent-on-cloudflare`, `building-mcp-server-on-cloudflare`, `cloudflare`
   <details>
@@ -276,27 +276,27 @@ Build edge-native apps, agents, workers, and durable systems on Cloudflare.
   </details>
 - Skill count: `9`
 
-#### `sentry`
+#### [`sentry`](./plugins/sentry)
 Inspect real production issues and prioritize fixes with error-first operational visibility.
 - Top skills: `sentry`
 - Skill count: `1`
 
-#### `aws`
+#### [`aws`](./plugins/aws)
 Design and operate secure AWS architectures, including OpenAI-powered workloads.
 - Top skills: `aws-openai-workflow`, `aws-workflow`
 - Skill count: `2`
 
-#### `supabase`
+#### [`supabase`](./plugins/supabase)
 Stand up and run Supabase projects with CLI-first setup and usage workflows.
 - Top skills: `cli`, `setup`, `supabase-usage`
 - Skill count: `3`
 
-#### `resend`
+#### [`resend`](./plugins/resend)
 Operationalize email delivery from local dev to CI pipelines with Resend-native tooling.
 - Top skills: `resend-cli`
 - Skill count: `1`
 
-#### `hugging-face`
+#### [`hugging-face`](./plugins/hugging-face)
 Production toolkit for model discovery, datasets, evals, Spaces, and inference flows.
 - Top skills: `cli`, `community-evals`, `datasets`, `gradio`
   <details>

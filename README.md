@@ -28,7 +28,9 @@ open-source ecosystems, enterprise platforms, and modern CLI-driven stacks.
 
 - [x] Development tools you can run now
   - [x] Use structured implementation workflows from `superpowers` (planning, debugging, TDD, verification, code review).
+  - [x] Install and verify the OMX workflow layer with `omx` (`setup`) for consistent Codex runtime bootstrapping.
   - [x] Optimize prompt/token efficiency with `prompt-optimizer` (`prompt-optimizer`) for concise, reusable request patterns.
+  - [x] Use Merchant API-focused integration/migration guidance with `google` (`mapi-developer-assistant`).
   - [x] Run plugin-specific CLI workflows with `supabase` (`cli`) and `resend` (`resend-cli`).
   - [x] Remove image backgrounds and prepare transparent assets with `rembg` (`rembg`).
   - [x] Run local filesystem and terminal automation workflows with `desktop-commander` (`desktop-commander-ops`).
@@ -58,8 +60,8 @@ open-source ecosystems, enterprise platforms, and modern CLI-driven stacks.
 - [x] Broad project support
   - [x] Web frameworks/platforms: strong support via `vercel`, `netlify`, `build-web-apps`, `cloudflare`.
   - [x] Mobile: `build-ios-apps` (SwiftUI) and `test-android-apps` (emulator QA).
-  - [x] Commerce: `medusa` and `saleor`.
-  - [x] Productivity/workspace automation: `google-drive`, `gmail`, `google-calendar`, `slack`, `notion`, `box`, `linear`, `prompt-optimizer`, `rembg`.
+  - [x] Commerce: `medusa`, `saleor`, and `google` (Merchant API skill support).
+  - [x] Productivity/workspace automation: `google-drive`, `gmail`, `google-calendar`, `slack`, `notion`, `box`, `linear`, `prompt-optimizer`, `rembg`, `omx`.
 
 - [x] Auto-generate top-skill blocks and skill counts from plugin metadata/scripts.
 
@@ -511,6 +513,22 @@ Local filesystem and terminal superpowers via MCP
 - Top skills: `desktop-commander-ops`
 - Skill count: `1`
 - Maturity: `unspecified`
+
+#### [`omx`](./plugins/omx)
+
+Install and verify oh-my-codex
+
+- Top skills: `setup`
+- Skill count: `1`
+- Maturity: `unspecified`
+
+#### [`google`](./plugins/google)
+
+Merchant API developer assistant
+
+- Top skills: `mapi-developer-assistant`
+- Skill count: `1`
+- Maturity: `unspecified`
 <!-- END AUTO:PLUGIN_LINEUP -->
 
 ## Capability matrix
@@ -553,6 +571,8 @@ This matrix is generated from plugin metadata and skill discovery.
 | `desktop-commander` | `Coding` | 1 | desktop-commander-ops | `unspecified` |
 | `prompt-optimizer` | `Productivity` | 1 | prompt-optimizer | `unspecified` |
 | `rembg` | `Productivity` | 1 | rembg | `unspecified` |
+| `omx` | `Coding` | 1 | setup | `unspecified` |
+| `google` | `Coding` | 1 | mapi-developer-assistant | `unspecified` |
 <!-- END AUTO:CAPABILITY_MATRIX -->
 
 ## Plugin maturity
@@ -563,7 +583,7 @@ Maturity labels (`alpha`, `beta`, `stable`) are sourced from marketplace entries
 - `stable`: 0
 - `beta`: 0
 - `alpha`: 0
-- `unspecified`: 33
+- `unspecified`: 35
 <!-- END AUTO:MATURITY_BADGES -->
 
 ## License

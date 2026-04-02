@@ -1,0 +1,41 @@
+{
+  "name": "google",
+  "version": "0.1.0",
+  "description": "Google Merchant API developer workflows and migration guidance for agent-driven coding sessions.",
+  "author": {
+    "name": "Google",
+    "url": "https://developers.google.com/"
+  },
+  "homepage": "https://github.com/google/merchant-api-samples",
+  "repository": "https://github.com/openwebu/codex-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "google",
+    "merchant-api",
+    "shopping",
+    "integration"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Google",
+    "shortDescription": "Merchant API developer assistant",
+    "longDescription": "Provides Merchant API domain guidance for Shopping integrations, including Content API migration help, code generation patterns, and API error troubleshooting.",
+    "developerName": "Google",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://developers.google.com/merchant/api",
+    "privacyPolicyURL": "https://policies.google.com/privacy",
+    "termsOfServiceURL": "https://policies.google.com/terms",
+    "defaultPrompt": [
+      "How do I insert a product using the Merchant API in Python?",
+      "Help migrate this integration from Content API to Merchant API.",
+      "Troubleshoot this Merchant API 400 validation error and suggest a fix."
+    ],
+    "brandColor": "#1A73E8",
+    "screenshots": []
+  }
+}

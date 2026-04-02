@@ -1,0 +1,41 @@
+{
+  "name": "rembg",
+  "version": "0.1.0",
+  "description": "Remove image backgrounds from local files using rembg workflows.",
+  "author": {
+    "name": "OpenAI",
+    "email": "support@openai.com",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://github.com/danielgatis/rembg",
+  "repository": "https://github.com/openwebu/codex-plugins",
+  "license": "MIT",
+  "keywords": [
+    "rembg",
+    "image",
+    "background-removal",
+    "asset-prep"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "rembg",
+    "shortDescription": "Remove image backgrounds with rembg",
+    "longDescription": "Adds a focused rembg workflow for removing image backgrounds from local assets and preparing transparent PNG outputs for web and app projects.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/danielgatis/rembg",
+    "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/terms-of-use/",
+    "defaultPrompt": [
+      "Use rembg to remove the background from ./assets/photo.jpg and save to ./assets/photo-cutout.png.",
+      "Batch-remove backgrounds from all PNG files in ./input and write transparent outputs to ./output.",
+      "Help me install rembg and verify it works on one test image."
+    ],
+    "brandColor": "#0F172A",
+    "screenshots": []
+  }
+}

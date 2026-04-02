@@ -30,6 +30,7 @@ open-source ecosystems, enterprise platforms, and modern CLI-driven stacks.
   - [x] Use structured implementation workflows from `superpowers` (planning, debugging, TDD, verification, code review).
   - [x] Optimize prompt/token efficiency with `prompt-optimizer` (`prompt-optimizer`) for concise, reusable request patterns.
   - [x] Run plugin-specific CLI workflows with `supabase` (`cli`) and `resend` (`resend-cli`).
+  - [x] Remove image backgrounds and prepare transparent assets with `rembg` (`rembg`).
   - [x] Run local filesystem and terminal automation workflows with `desktop-commander` (`desktop-commander-ops`).
   - [x] Standardize container build, compose, publish, and debug loops with `docker` (`docker-build-local-images`, `docker-compose-dev-loop`, `docker-publish-images`, `docker-debug-containers`).
   - [x] Use integration-focused workflows for cloud/platform ops with `aws`, `cloudflare`, `vercel`, and `netlify`.
@@ -58,7 +59,7 @@ open-source ecosystems, enterprise platforms, and modern CLI-driven stacks.
   - [x] Web frameworks/platforms: strong support via `vercel`, `netlify`, `build-web-apps`, `cloudflare`.
   - [x] Mobile: `build-ios-apps` (SwiftUI) and `test-android-apps` (emulator QA).
   - [x] Commerce: `medusa` and `saleor`.
-  - [x] Productivity/workspace automation: `google-drive`, `gmail`, `google-calendar`, `slack`, `notion`, `box`, `linear`, `prompt-optimizer`.
+  - [x] Productivity/workspace automation: `google-drive`, `gmail`, `google-calendar`, `slack`, `notion`, `box`, `linear`, `prompt-optimizer`, `rembg`.
 
 - [x] Auto-generate top-skill blocks and skill counts from plugin metadata/scripts.
 
@@ -320,6 +321,14 @@ Lower token usage without losing intent
 - Skill count: `1`
 - Maturity: `unspecified`
 
+#### [`rembg`](./plugins/rembg)
+
+Remove image backgrounds with rembg
+
+- Top skills: `rembg`
+- Skill count: `1`
+- Maturity: `unspecified`
+
 ### Design
 
 #### [`canva`](./plugins/canva)
@@ -543,6 +552,7 @@ This matrix is generated from plugin metadata and skill discovery.
 | `docker` | `Coding` | 8 | audit-go-dependencies, bump-go-dependencies, docker-build-local-images, docker-compose-dev-loop | `unspecified` |
 | `desktop-commander` | `Coding` | 1 | desktop-commander-ops | `unspecified` |
 | `prompt-optimizer` | `Productivity` | 1 | prompt-optimizer | `unspecified` |
+| `rembg` | `Productivity` | 1 | rembg | `unspecified` |
 <!-- END AUTO:CAPABILITY_MATRIX -->
 
 ## Plugin maturity
@@ -553,7 +563,7 @@ Maturity labels (`alpha`, `beta`, `stable`) are sourced from marketplace entries
 - `stable`: 0
 - `beta`: 0
 - `alpha`: 0
-- `unspecified`: 32
+- `unspecified`: 33
 <!-- END AUTO:MATURITY_BADGES -->
 
 ## License

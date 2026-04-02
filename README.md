@@ -28,7 +28,7 @@ open-source ecosystems, enterprise platforms, and modern CLI-driven stacks.
 
 - [x] Development tools you can run now
   - [x] Use structured implementation workflows from `superpowers` (planning, debugging, TDD, verification, code review).
-  - [x] Install and verify the OMX workflow layer with `omx` (`setup`) for consistent Codex runtime bootstrapping.
+  - [x] Run the full OMX workflow layer with `omx` (`deep-interview`, `ralplan`, `ralph`, `team`) and setup compatibility skills.
   - [x] Optimize prompt/token efficiency with `prompt-optimizer` (`prompt-optimizer`) for concise, reusable request patterns.
   - [x] Use Merchant API-focused integration/migration guidance with `google` (`mapi-developer-assistant`).
   - [x] Run plugin-specific CLI workflows with `supabase` (`cli`) and `resend` (`resend-cli`).
@@ -516,10 +516,11 @@ Local filesystem and terminal superpowers via MCP
 
 #### [`omx`](./plugins/omx)
 
-Install and verify oh-my-codex
+Complete oh-my-codex workflow skill pack
 
-- Top skills: `setup`
-- Skill count: `1`
+- Top skills: `deep-interview`, `ralplan`, `ralph`, `team`
+- Additional skills: `ai-slop-cleaner`, `analyze`, `ask-claude`, `ask-gemini`, `autopilot`, `build-fix`, `cancel`, `code-review`, `configure-notifications`, `deepsearch`, `doctor`, `ecomode`, `frontend-ui-ux`, `git-master`, `help`, `hud`, `note`, `omx-setup`, `pipeline`, `plan`, `ralph-init`, `review`, `security-review`, `setup`, `skill`, `swarm`, `tdd`, `trace`, `ultraqa`, `ultrawork`, `visual-verdict`, `web-clone`, `worker`
+- Skill count: `37`
 - Maturity: `unspecified`
 
 #### [`google`](./plugins/google)
@@ -571,7 +572,7 @@ This matrix is generated from plugin metadata and skill discovery.
 | `desktop-commander` | `Coding` | 1 | desktop-commander-ops | `unspecified` |
 | `prompt-optimizer` | `Productivity` | 1 | prompt-optimizer | `unspecified` |
 | `rembg` | `Productivity` | 1 | rembg | `unspecified` |
-| `omx` | `Coding` | 1 | setup | `unspecified` |
+| `omx` | `Coding` | 37 | deep-interview, ralplan, ralph, team | `unspecified` |
 | `google` | `Coding` | 1 | mapi-developer-assistant | `unspecified` |
 <!-- END AUTO:CAPABILITY_MATRIX -->
 
@@ -600,6 +601,7 @@ These are the source repositories used to create and evolve skills across this p
 - [cli](https://github.com/supabase/cli)
 - [DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP)
 - [medusa-agent-skills](https://github.com/medusajs/medusa-agent-skills)
+- [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)
 - [openai/plugins](https://github.com/openai/plugins) _(official upstream plugin repository)_
 - [plugins](https://github.com/openwebu/codex-plugins)
 - [resend-cli](https://github.com/resend/resend-cli)

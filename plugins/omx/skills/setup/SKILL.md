@@ -5,7 +5,9 @@ description: Use when the user wants to install or verify the OMX (oh-my-codex) 
 
 # OMX Setup
 
-Use this skill to detect missing Codex/OMX binaries, install them if needed, and verify a healthy OMX runtime.
+Compatibility alias for OMX setup flows.
+
+Prefer `omx-setup` when available; `setup` is retained for users that expect a short setup entrypoint.
 
 ## What this setup guarantees
 

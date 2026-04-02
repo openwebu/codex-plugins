@@ -410,7 +410,13 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Coding",
+      "topSkills": [
+        "deep-interview",
+        "ralplan",
+        "ralph",
+        "team"
+      ]
     },
     {
       "name": "google",

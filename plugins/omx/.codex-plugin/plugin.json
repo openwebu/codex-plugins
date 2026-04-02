@@ -1,7 +1,7 @@
 {
   "name": "omx",
   "version": "0.1.0",
-  "description": "Install and verify the oh-my-codex (OMX) workflow layer for OpenAI Codex CLI.",
+  "description": "Full oh-my-codex workflow layer skills for OpenAI Codex CLI, including setup, planning, team orchestration, and persistent execution loops.",
   "author": {
     "name": "OpenAI",
     "email": "support@openai.com",
@@ -14,13 +14,15 @@
     "omx",
     "oh-my-codex",
     "codex",
-    "setup"
+    "workflow",
+    "planning",
+    "orchestration"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "OMX",
-    "shortDescription": "Install and verify oh-my-codex",
-    "longDescription": "Adds a setup skill that detects missing Codex/OMX binaries, installs them when needed, then runs `omx setup` and `omx doctor` to verify the workflow layer is ready.",
+    "shortDescription": "Complete oh-my-codex workflow skill pack",
+    "longDescription": "Provides the full OMX skill surface (deep-interview, ralplan, ralph, team, ultrawork, and supporting skills) plus setup/doctor workflows to bootstrap and run consistent Codex execution pipelines.",
     "developerName": "OpenAI",
     "category": "Coding",
     "capabilities": [
@@ -32,9 +34,9 @@
     "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
     "termsOfServiceURL": "https://openai.com/policies/terms-of-use/",
     "defaultPrompt": [
-      "Run /omx:setup to install Codex and OMX if missing, then verify with omx doctor.",
-      "Check whether my environment is ready for omx --madmax --high and fix missing prerequisites.",
-      "Set up OMX and show the canonical $deep-interview -> $ralplan -> $ralph/$team flow."
+      "Use $deep-interview to clarify this request, then $ralplan for consensus planning.",
+      "Carry this approved plan to completion with $ralph and verification.",
+      "Run /omx:setup to install Codex + OMX if missing and verify with omx doctor."
     ],
     "brandColor": "#2563EB",
     "screenshots": []
